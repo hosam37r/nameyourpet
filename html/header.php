@@ -21,7 +21,7 @@
             <li><a href="Index.php">Home</a></li>
             <li><a href="">Find Your Pet Name!</a></li>
             <li><a href="">Important Info</a></li>
-            <li><a href="">Trending Pet Names</a></li>
+            <li><a href="TrendingPetNames.php">Trending Pet Names</a></li>
             <li><a href="contactUs.php">Contact Us</a></li>
         </ul>
     </nav>

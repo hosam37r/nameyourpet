@@ -29,7 +29,7 @@
     top:8%;
     height:15%;
     background-color:rgb(29, 29, 29);
-    border:dashed green;
+    border:dashed blue;
     opacity:80%;
 }
 
@@ -39,7 +39,7 @@
     top:30%;
     position:relative;
     float:left;
-    background-color:rgb(16, 155, 74);
+    background-color:rgb(0, 14, 206);
     margin:1%;
     left:22%;
 }
@@ -79,40 +79,40 @@
     <h3 style = "color:white;font-size:1.6em;font-family: 'Balsamiq Sans', cursive;position:absolute;left:40%;top:18%;">Monday & Wednesday: 10:00 - 11:50 CST</h3>
 
     <div class = "contactBox">
-        <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:19%;top:8%;font-size:1.5em;">Start a Chat</h2>
+        <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:19%;top:8%;font-size:1.5em;color:white;">Start a Chat</h2>
         <img src = "images/bLine.jpg" style = "width:55%;height:0.5%;position:absolute;left:30%;top:20%;">
 
         <img src = "images/chat.png" style = "width:55%;height:30%;position:absolute;left:25%;top:30%;">
 
-        <button id = "rightSideBut" onclick = "revealRightTab()" style = "position:absolute;left:15%;top:80%;width:60%;height:10%;background-color:rgb(92, 2, 92);"><p id = "rightPTag" onclick = "revealRightTab()" style="position:absolute;top:15%;left:35%;font-size:1.5em;">Start</p></button>
+        <button id = "rightSideBut" onclick = "revealRightTab()" style = "position:absolute;left:15%;top:80%;width:60%;height:10%;background-color:rgb(248, 248, 248);color:black"><p id = "rightPTag" onclick = "revealRightTab()" style="position:absolute;top:15%;left:35%;font-size:1.5em;">Start</p></button>
     
     </div>
     
     <div class = "contactBox">
-        <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:30%;top:8%;font-size:1.5em;">Share Us</h2>
+        <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:30%;top:8%;font-size:1.5em;color:white;">Share Us</h2>
         <img src = "images/bLine.jpg" style = "width:39%;height:0.5%;position:absolute;left:40%;top:20%;">
 
         <img src = "images/thumbsUp.png" style = "width:55%;height:30%;position:absolute;left:25%;top:30%;">
         
-        <a href="https://www.facebook.com" style = "position:absolute;left:17%;top:82%;width:60%;height:10%;background-color:rgb(92, 2, 92);"><p style="position:absolute;top:15%;left:30%;font-size:1.3em;">Share</p></a>
+        <a href="https://www.facebook.com" style = "position:absolute;left:17%;top:82%;width:60%;height:10%;background-color:rgb(248, 248, 248);color:black"><p style="position:absolute;top:15%;left:30%;font-size:1.3em;">Share</p></a>
     </div>
 
     <div class = "contactBox">
-    <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:23%;top:8%;font-size:1.5em;">Email Us</h2>
+    <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:23%;top:8%;font-size:1.5em;color:white;">Email Us</h2>
         <img src = "images/bLine.jpg" style = "width:45%;height:0.5%;position:absolute;left:27%;top:20%;">
 
         <img src = "images/emailUs.png" style = "width:55%;height:30%;position:absolute;left:25%;top:30%;">
 
-        <button id = "leftSideBut" onclick = "revealLeftTab()" style = "position:absolute;left:15%;top:80%;width:60%;height:10%;background-color:rgb(92, 2, 92);"><p id = "leftPTag" onclick = "revealLeftTab()" style="position:absolute;top:15%;left:35%;font-size:1.5em;">Send</p></button>
+        <button id = "leftSideBut" onclick = "revealLeftTab()" style = "position:absolute;left:15%;top:80%;width:60%;height:10%;background-color:rgb(248, 248, 248);color:black"><p id = "leftPTag" onclick = "revealLeftTab()" style="position:absolute;top:15%;left:35%;font-size:1.5em;">Send</p></button>
     </div>
 
     <div class = "contactBox">
-    <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:23%;top:8%;font-size:1.5em;">Call Us</h2>
+    <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:23%;top:8%;font-size:1.5em;color:white;">Call Us</h2>
         <img src = "images/bLine.jpg" style = "width:45%;height:0.5%;position:absolute;left:27%;top:20%;">
 
         <img src = "images/phone.png" style = "width:55%;height:30%;position:absolute;left:25%;top:30%;">
 
-        <p style="font-family: 'Fraunces', serif;position:absolute;top:80%;left:20%;font-size:1.5em;"><b>608.663.8353</b></p>
+        <p style="font-family: 'Fraunces', serif;position:absolute;top:80%;left:20%;font-size:1.5em;color:white;"><b>608.663.8353</b></p>
     
     </div>
 
@@ -123,21 +123,26 @@
         <p id = "convo" style = "background-color:white;border:1px solid grey;position:absolute;top:2%;left:10%;width:80%;height:50%;overflow:scroll;"> AI: What can I help you with today? <br>
         </p>
         <input type="text" style = "position:absolute;top:55%;left:10%;width:80%;height:20%;" id = "talkToAi">
-        <button id = "userInForTalk" onclick = "talk()" style = "position:absolute;left:58%;top:75%;background-color:rgb(92, 2, 92);width:25%;">Enter</button>
+        <button id = "userInForTalk" onclick = "talk()" style = "position:absolute;left:58%;top:75%;background-color:rgb(248, 248, 248);width:25%;color:black">Enter</button>
     </div>
 
     <div id = "leftSideBar">
-        <input type = "text" value = "First Name" style = "position:absolute;top:3%;" class = "ins" id = "fName">
-        <input type = "text" value = "Last Name" style = "position:absolute;top:10%;" class = "ins" id = "lName">
-        <input type = "text" value = "Email" style = "position:absolute;top:17%;" class = "ins" id = "email">
-        <input type = "text" value = "Text" style = "position:absolute;top:24%;height:20%;text-align:top" class = "ins" id = "texts">
-        <button onclick = "submitEmail()" style = "position:absolute;left:-1.3%;top:46%;background-color:rgb(92, 2, 92)" class = "ins">Submit</button>
-    
+        
+        <!--<form action="mailto:jakethorson09@yahoo.com" method="post" enctype="text/plain">-->
+
+        <input type = "text" value = "full name"  style = "position:absolute;top:3%;" name="name" class = "ins" id = "fName">
+        <input type = "text" value = "email" style = "position:absolute;top:10%;" name="mail" class = "ins" id = "email">
+        <input type = "text" value = "phone number" style = "position:absolute;top:17%;" name = "phone" class = "ins" id = "phone">
+        <input type = "text" value = "country" style = "position:absolute;top:24%;" name = "country" class = "ins" id = "country">
+        <input type = "text" value = "your message" style = "position:absolute;top:31%;height:18%;" name = "message" class = "ins" id = "message">
+
+        <input type="submit" style = "position:absolute;top:52%;background-color:black;width:25%;left:65%;" value="Send">
+        <input type="reset" value="Reset">
+        </form>
 
     </div>
 
     <p id = "aiResponse" style = "display:none">5</p>
-
 
 
 <script>
@@ -206,11 +211,7 @@ function talk(){
 }
 
 function submitEmail(){
-    document.getElementById("fName").value = "First Name";
-    document.getElementById("lName").value = "Last Name";
-    document.getElementById("email").value = "Email";
-    document.getElementById("texts").value = "Text";
-    document.getElementById("leftSideBar").style.right = "100%";
+
 }
 </script>
 </body>

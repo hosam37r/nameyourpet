@@ -131,9 +131,9 @@
     <!-- Question 2 -->
     <label>Question 2</label>
     <br>
-    <input type="radio" name="js" id="isTrue" />
+    <input type="checkbox" name="js" id="isTrue" value="true" />
     <label style="color:black;">Yes</label>
-    <input type="radio" name="js" id="isFalse" />
+    <input type="checkbox" name="js" id="isFalse" value="false" />
     <label style="color:black;">No</label>
     <span id="feedback2"></span>
     <p></p>

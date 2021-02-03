@@ -54,6 +54,16 @@
     <link rel="stylesheet" href="MainStyle.css">
     <link rel="stylesheet" href="ResetStyle.css">
 <style>
+    *{
+    margin: 15px;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    
+    label {
+        color: blue;
+    }
+    
     label {
         color: blue;
     }
@@ -63,7 +73,7 @@
         font-size: 1.1em;
         border-radius: 10px;
         border-style: none;
-        background-color: white;
+        background-color: cornflowerblue;
      }
         
     #result {
@@ -80,6 +90,7 @@
         font-style: italic;
         margin: 5px;
     }
+    
 </style>
 
 <script>
@@ -112,12 +123,16 @@
             <li><a> href="header.php">Find Your Pet Name!</a></li>
             <li><a> href="">Important Info</a></li>
             <li><a> href="TrendPetNames.php">Trending Pet Names</a></li>
-                <li><a> href="contactUs.php">Contact Us</a></li>
+            <li><a> href="contactUs.php">Contact Us</a></li>
             </ul> 
         </nav>
         
     </div>
-
+    
+    <br>
+    <br>
+    <br>
+    <table>
     <!-- Question 1 -->
     <label>Question 1</label>
     <br>
@@ -168,6 +183,7 @@
     <button onclick=checkAns()>Evaluate Quiz</button>
     <p id="result">Your result is: </p>         
     </div>
+    </table>
     
 </body>
 </html>

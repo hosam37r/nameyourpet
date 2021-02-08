@@ -2,217 +2,157 @@
 <html>
 <head>
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300&display=swap" rel="stylesheet">
+
 
 <style>
-#main  {
-    background-image: url("images/dogBackground.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
-    width:100%;height:100%;
-    position:absolute;
-    top:15.5%;
-}
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
-#lowerNav{
-    width:100%;
-    position:absolute;
-    top:8%;
-    height:15%;
-    background-color:rgb(29, 29, 29);
-    border:dashed blue;
-    opacity:80%;
-}
-
-.contactBox{
-    width:12%;
-    height:21%;
-    top:30%;
-    position:relative;
-    float:left;
-    background-color:rgb(0, 14, 206);
-    margin:1%;
-    left:22%;
-}
-#rightSideBar{
-    position:absolute;
-    width:20%;
-    left:100%;
-    height:100%;
-    background-color:rgb(162, 162, 162);
-}
-#leftSideBar{
-    position:absolute;
-    width:20%;
-    right:100%;
-    height:100%;
-    background-color:rgb(162, 162, 162);
+.hidden{
+    display:none;
 }
 
 </style>
+
+
 </head>
 <body>
+
+<!--
+
+
+
+
+    $.ajax({
+    url: "http://localhost:8080/ ... a php file ... ?whatever variable you need=
+    type: "GET",
+    success: function (result) {
+        }
+            
+
+
+
+
+
+
+    if(!isset($_SESSION)){
+        session_start();
+    }
+-->
 <?php
+
     include_once 'header.php';
+    include_once 'footer.php';
+    //session_destroy();
 ?>
 
-<?php
-    //include_once 'footer.php';
-?>
 
 
-<div id = "main">
+<div id = "leftBar">
+    <h3 style = "position:absolute;left:5%;top:20%;font-size:2.0em;" >Email Us</h3>
+    <form>
+        <input type="text" id="fname" name="fname" value="full name" style = "position:absolute;top:25%;width:25%;"><br>
+        <input type="text" id="email" name="email" value="email" style = "position:absolute;top:30%;width:25%;">
+        <input type="text" id="phone" name="phone" value="phone number" style = "position:absolute;top:35%;width:25%;">
+        <input type="text" id="texts" name="texts" value="send us a message" style = "position:absolute;top:40%;width:25%;height:20%;">
+    </form>
 
-    <div id = "lowerNav">
-    </div>
-    <h3 style = "color:white;font-size:2.5em;font-family: 'Balsamiq Sans', cursive;position:absolute;left:38%;top:10%;">Don't be shy, ask Nameurpet!</h3>
-    <img src = "images/line.jpg" style = "width:15%;height:0.5%;position:absolute;left:45%;top:16%;">
-    <h3 style = "color:white;font-size:1.6em;font-family: 'Balsamiq Sans', cursive;position:absolute;left:40%;top:18%;">Monday & Wednesday: 10:00 - 11:50 CST</h3>
+    <h3 style = "position:absolute;left:7%;top:63%;">Rate Us</h3>
+    <img onclick = "submitOne()" src = "images/star.jpg" style = "position:absolute;left:4%;top:66%;height:3%;width:2%;" id = "starOne" onmouseover="oneStar();" onmouseout="clearStars();">
+    <img onclick = "submitTwo();" src = "images/star.jpg" style = "position:absolute;left:6%;top:66%;height:3%;width:2%;" id = "starTwo" onmouseover="twoStar();" onmouseout="clearStars();">
+    <img  onclick = "submitThree();" src = "images/star.jpg" style = "position:absolute;left:8%;top:66%;height:3%;width:2%;" id = "starThree" onmouseover="threeStar();" onmouseout="clearStars();">
+    <img onclick = "submitFour();" src = "images/star.jpg" style = "position:absolute;left:10%;top:66%;height:3%;width:2%;" id = "starFour" onmouseover="fourStar();" onmouseout="clearStars();">
+    <img  onclick = "submitFive();" src = "images/star.jpg" style = "position:absolute;left:12%;top:66%;height:3%;width:2%;" id = "starFive" onmouseover="fiveStar();" onmouseout="clearStars();">
 
-    <div class = "contactBox">
-        <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:19%;top:8%;font-size:1.5em;color:white;">Start a Chat</h2>
-        <img src = "images/bLine.jpg" style = "width:55%;height:0.5%;position:absolute;left:30%;top:20%;">
-
-        <img src = "images/chat.png" style = "width:55%;height:30%;position:absolute;left:25%;top:30%;">
-
-        <button id = "rightSideBut" onclick = "revealRightTab()" style = "position:absolute;left:15%;top:80%;width:60%;height:10%;background-color:rgb(248, 248, 248);color:black"><p id = "rightPTag" onclick = "revealRightTab()" style="position:absolute;top:15%;left:35%;font-size:1.5em;">Start</p></button>
-    
-    </div>
-    
-    <div class = "contactBox">
-        <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:30%;top:8%;font-size:1.5em;color:white;">Share Us</h2>
-        <img src = "images/bLine.jpg" style = "width:39%;height:0.5%;position:absolute;left:40%;top:20%;">
-
-        <img src = "images/thumbsUp.png" style = "width:55%;height:30%;position:absolute;left:25%;top:30%;">
-        
-        <a href="https://www.facebook.com" style = "position:absolute;left:17%;top:82%;width:60%;height:10%;background-color:rgb(248, 248, 248);color:black"><p style="position:absolute;top:15%;left:30%;font-size:1.3em;">Share</p></a>
-    </div>
-
-    <div class = "contactBox">
-    <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:23%;top:8%;font-size:1.5em;color:white;">Email Us</h2>
-        <img src = "images/bLine.jpg" style = "width:45%;height:0.5%;position:absolute;left:27%;top:20%;">
-
-        <img src = "images/emailUs.png" style = "width:55%;height:30%;position:absolute;left:25%;top:30%;">
-
-        <button id = "leftSideBut" onclick = "revealLeftTab()" style = "position:absolute;left:15%;top:80%;width:60%;height:10%;background-color:rgb(248, 248, 248);color:black"><p id = "leftPTag" onclick = "revealLeftTab()" style="position:absolute;top:15%;left:35%;font-size:1.5em;">Send</p></button>
-    </div>
-
-    <div class = "contactBox">
-    <h2 style = "font-family: 'Pacifico', cursive;position:relative;left:23%;top:8%;font-size:1.5em;color:white;">Call Us</h2>
-        <img src = "images/bLine.jpg" style = "width:45%;height:0.5%;position:absolute;left:27%;top:20%;">
-
-        <img src = "images/phone.png" style = "width:55%;height:30%;position:absolute;left:25%;top:30%;">
-
-        <p style="font-family: 'Fraunces', serif;position:absolute;top:80%;left:20%;font-size:1.5em;color:white;"><b>608.663.8353</b></p>
-    
-    </div>
-
-    </div>
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:4%;top:66%;height:3%;width:2%;" id = "hiddenStarOne" class = "hidden">
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:6%;top:66%;height:3%;width:2%;" id = "hiddenStarTwo" class = "hidden">
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:8%;top:66%;height:3%;width:2%;" id = "hiddenStarThree" class = "hidden">
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:10%;top:66%;height:3%;width:2%;" id = "hiddenStarFour" class = "hidden">
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:12%;top:66%;height:3%;width:2%;" id = "hiddenStarFive" class = "hidden">
 
 
-    <div id = "rightSideBar">
-        <p id = "convo" style = "background-color:white;border:1px solid grey;position:absolute;top:2%;left:10%;width:80%;height:50%;overflow:scroll;"> AI: What can I help you with today? <br>
-        </p>
-        <input type="text" style = "position:absolute;top:55%;left:10%;width:80%;height:20%;" id = "talkToAi">
-        <button id = "userInForTalk" onclick = "talk()" style = "position:absolute;left:58%;top:75%;background-color:rgb(248, 248, 248);width:25%;color:black">Enter</button>
-    </div>
+    <button style = "position:absolute;left:18%;top:64%;background-color:blue;width:5%;"> Submit </button>
+</div>
 
-    <div id = "leftSideBar">
-        
-        <!--<form action="mailto:jakethorson09@yahoo.com" method="post" enctype="text/plain">-->
+<div id = "center" style = "position:absolute;left:25%;top:20%;width:70%;height:100%;">
+    <img src = "images/dogBackground.jpg" style = "position:absolute;height:60%;width:100%;">
+</div>
+    <h3 style = "color:white;position:absolute;left:30%;top:25%;font-size:2.5em"> Contact Us </h3>
 
-        <input type = "text" value = "full name"  style = "position:absolute;top:3%;" name="name" class = "ins" id = "fName">
-        <input type = "text" value = "email" style = "position:absolute;top:10%;" name="mail" class = "ins" id = "email">
-        <input type = "text" value = "phone number" style = "position:absolute;top:17%;" name = "phone" class = "ins" id = "phone">
-        <input type = "text" value = "country" style = "position:absolute;top:24%;" name = "country" class = "ins" id = "country">
-        <input type = "text" value = "your message" style = "position:absolute;top:31%;height:18%;" name = "message" class = "ins" id = "message">
-
-        <input type="submit" style = "position:absolute;top:52%;background-color:black;width:25%;left:65%;" value="Send">
-        <input type="reset" value="Reset">
-        </form>
-
-    </div>
-
-    <p id = "aiResponse" style = "display:none">5</p>
+ 
 
 
 <script>
 
-window.onclick = function(event) {
-    if (!event.target.matches('#rightSideBar')) {
-        if (!event.target.matches('#rightSideBut')) {
-            if (!event.target.matches('#talkToAi')) {
-                if (!event.target.matches('#userInForTalk')) {
-                    if (!event.target.matches('#rightPTag')) {
-                        document.getElementById("rightSideBar").style.left = "100%";
-                    }
-                }
-            }
-        }
-    }
-    if (!event.target.matches('#leftSideBut')) {
-        if (!event.target.matches('#leftSideBar')) {
-            if (!event.target.matches('.ins')) {
-                if (!event.target.matches('#leftPTag')) {
-                    document.getElementById("leftSideBar").style.right = "100%";
-                }
-            }
-        }
-    }
+document.getElementById('starOne').onmouseover=function(){oneStar();};
+document.getElementById('starTwo').onmouseover=function(){twoStar();};
+document.getElementById('starThree').onmouseover=function(){threeStar();};
+document.getElementById('starFour').onmouseover=function(){fourStar();};
+document.getElementById('starFive').onmouseover=function(){fiveStar();};
 
+function fiveStar(){
+    fourStar();
+    document.getElementById('starFive').src = "images/bluestar.jpg";
 }
 
-function revealLeftTab(){
-    document.getElementById("leftSideBar").style.right = "80%";
+function fourStar(){
+    threeStar();
+    document.getElementById('starFour').src = "images/bluestar.jpg";
 }
 
-function revealRightTab(){
-    document.getElementById("rightSideBar").style.left = "80%";
+function threeStar(){
+    twoStar();
+    document.getElementById('starThree').src = "images/bluestar.jpg";
 }
 
-function talk(){
-    var whatUserSaid = document.getElementById("talkToAi").value;
-    var convo = document.getElementById("convo").innerHTML;
-    convo = convo + "<br>" + "You: " + whatUserSaid + "<br><br>";
-
-    var lastResponse = document.getElementById("aiResponse").innerHTML;
-    var out = lastResponse;
-    while (out == lastResponse){
-        out = Math.floor(Math.random() * 5) + 1;
-        document.getElementById("aiResponse").innerHTML = out;
-        if(out == 1){
-            out = "I'm sorry, I do not understand.";
-        }
-        if(out == 2){
-            out = "I need to check if your phone number is correct";
-        }
-        if(out == 3){
-            out = "NameUrPet holds customer service as a high priority";
-        }
-        if(out == 4){
-            out = "Can you expand on that?";
-        }
-        if(out == 5){
-            out = "What can I help you with today?";
-        }
-    }
-
-    document.getElementById("convo").innerHTML = (convo + "AI: " + out + "<br>") ;
-
+function twoStar(){
+    oneStar();
+    document.getElementById('starTwo').src = "images/bluestar.jpg";
 }
 
-function submitEmail(){
-
+function oneStar(){
+    document.getElementById('starOne').src = "images/bluestar.jpg";
 }
+
+function clearStars(){
+    document.getElementById('starOne').src = "images/star.jpg";
+    document.getElementById('starTwo').src = "images/star.jpg";
+    document.getElementById('starThree').src = "images/star.jpg";
+    document.getElementById('starFour').src = "images/star.jpg";
+    document.getElementById('starFive').src = "images/star.jpg";
+}
+function eraseStars(){
+    document.getElementById("starOne").classList.add("hidden");
+    document.getElementById("starTwo").classList.add("hidden");
+    document.getElementById("starThree").classList.add("hidden");
+    document.getElementById("starFour").classList.add("hidden");
+    document.getElementById("starFive").classList.add("hidden");
+}
+
+function submitOne(){
+    eraseStars();
+    document.getElementById("hiddenStarOne").classList.remove("hidden");
+}
+function submitTwo(){
+    submitOne();
+    document.getElementById("hiddenStarTwo").classList.remove("hidden");
+}
+function submitThree(){
+    submitTwo();
+    document.getElementById("hiddenStarThree").classList.remove("hidden");
+}
+function submitFour(){
+    submitThree();
+    document.getElementById("hiddenStarFour").classList.remove("hidden");
+}
+function submitFive(){
+    submitFour();
+    document.getElementById("hiddenStarFive").classList.remove("hidden");
+}
+
 </script>
 </body>
 </html>

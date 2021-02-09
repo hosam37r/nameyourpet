@@ -4,16 +4,12 @@
 
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-
+<link rel="stylesheet" href="universalStyle.css">
 
 
 <style>
-.w3-sidebar a {font-family: "Roboto", sans-serif}
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 
-.hidden{
-    display:none;
-}
+
 
 </style>
 
@@ -21,69 +17,50 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </head>
 <body>
 
-<!--
 
-
-
-
-    $.ajax({
-    url: "http://localhost:8080/ ... a php file ... ?whatever variable you need=
-    type: "GET",
-    success: function (result) {
-        }
-            
-
-
-
-
-
-
-    if(!isset($_SESSION)){
-        session_start();
-    }
--->
 <?php
-
     include_once 'header.php';
-    include_once 'footer.php';
-    //session_destroy();
 ?>
 
 
 
-<div id = "leftBar">
-    <h3 style = "position:absolute;left:5%;top:20%;font-size:2.0em;" >Email Us</h3>
-    <form>
-        <input type="text" id="fname" name="fname" value="full name" style = "position:absolute;top:25%;width:25%;"><br>
-        <input type="text" id="email" name="email" value="email" style = "position:absolute;top:30%;width:25%;">
-        <input type="text" id="phone" name="phone" value="phone number" style = "position:absolute;top:35%;width:25%;">
-        <input type="text" id="texts" name="texts" value="send us a message" style = "position:absolute;top:40%;width:25%;height:20%;">
-    </form>
-
-    <h3 style = "position:absolute;left:7%;top:63%;">Rate Us</h3>
-    <img onclick = "submitOne()" src = "images/star.jpg" style = "position:absolute;left:4%;top:66%;height:3%;width:2%;" id = "starOne" onmouseover="oneStar();" onmouseout="clearStars();">
-    <img onclick = "submitTwo();" src = "images/star.jpg" style = "position:absolute;left:6%;top:66%;height:3%;width:2%;" id = "starTwo" onmouseover="twoStar();" onmouseout="clearStars();">
-    <img  onclick = "submitThree();" src = "images/star.jpg" style = "position:absolute;left:8%;top:66%;height:3%;width:2%;" id = "starThree" onmouseover="threeStar();" onmouseout="clearStars();">
-    <img onclick = "submitFour();" src = "images/star.jpg" style = "position:absolute;left:10%;top:66%;height:3%;width:2%;" id = "starFour" onmouseover="fourStar();" onmouseout="clearStars();">
-    <img  onclick = "submitFive();" src = "images/star.jpg" style = "position:absolute;left:12%;top:66%;height:3%;width:2%;" id = "starFive" onmouseover="fiveStar();" onmouseout="clearStars();">
-
-    <img src = "images/bluestar.jpg" style = "position:absolute;left:4%;top:66%;height:3%;width:2%;" id = "hiddenStarOne" class = "hidden">
-    <img src = "images/bluestar.jpg" style = "position:absolute;left:6%;top:66%;height:3%;width:2%;" id = "hiddenStarTwo" class = "hidden">
-    <img src = "images/bluestar.jpg" style = "position:absolute;left:8%;top:66%;height:3%;width:2%;" id = "hiddenStarThree" class = "hidden">
-    <img src = "images/bluestar.jpg" style = "position:absolute;left:10%;top:66%;height:3%;width:2%;" id = "hiddenStarFour" class = "hidden">
-    <img src = "images/bluestar.jpg" style = "position:absolute;left:12%;top:66%;height:3%;width:2%;" id = "hiddenStarFive" class = "hidden">
-
-
-    <button style = "position:absolute;left:18%;top:64%;background-color:blue;width:5%;"> Submit </button>
-</div>
-
-<div id = "center" style = "position:absolute;left:25%;top:20%;width:70%;height:100%;">
-    <img src = "images/dogBackground.jpg" style = "position:absolute;height:60%;width:100%;">
-</div>
-    <h3 style = "color:white;position:absolute;left:30%;top:25%;font-size:2.5em"> Contact Us </h3>
+<div id = "center">
+    <h3 id = "centerPageHeader">Contact Us</h3>  <!-- Page Heading Here -->
 
  
+</div>
 
+<div id = "leftBar">
+    <h3 style = "position:absolute;left:5%;top:5%;font-size:1.5em;" >Email Us</h3>
+    <form>
+        <input type="text" id="fname" name="fname" value="full name" style = "position:absolute;top:12%;width:100%;"><br>
+        <input type="text" id="email" name="email" value="email" style = "position:absolute;top:22%;width:100%;">
+        <input type="text" id="phone" name="phone" value="phone number" style = "position:absolute;top:32%;width:100%;">
+        <input type="text" id="texts" name="texts" value="send us a message" style = "position:absolute;top:42%;width:100%;height:20%;">
+    </form>
+
+    <h3 style = "position:absolute;left:35%;top:65%;">Rate Us</h3>
+    <img onclick = "submitOne()" src = "images/star.jpg" style = "position:absolute;left:16%;top:70%;height:7%;width:10%;" id = "starOne" onmouseover="oneStar();" onmouseout="clearStars();">
+    <img onclick = "submitTwo();" src = "images/star.jpg" style = "position:absolute;left:28%;top:70%;height:7%;width:10%;" id = "starTwo" onmouseover="twoStar();" onmouseout="clearStars();">
+    <img  onclick = "submitThree();" src = "images/star.jpg" style = "position:absolute;left:40%;top:70%;height:7%;width:10%;" id = "starThree" onmouseover="threeStar();" onmouseout="clearStars();">
+    <img onclick = "submitFour();" src = "images/star.jpg" style = "position:absolute;left:52%;top:70%;height:7%;width:10%;" id = "starFour" onmouseover="fourStar();" onmouseout="clearStars();">
+    <img  onclick = "submitFive();" src = "images/star.jpg" style = "position:absolute;left:64%;top:70%;height:7%;width:10%;" id = "starFive" onmouseover="fiveStar();" onmouseout="clearStars();">
+
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:16%;top:70%;height:7%;width:10%;" id = "hiddenStarOne" class = "hidden">
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:28%;top:70%;height:7%;width:10%;" id = "hiddenStarTwo" class = "hidden">
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:40%;top:70%;height:7%;width:10%;" id = "hiddenStarThree" class = "hidden">
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:52%;top:70%;height:7%;width:10%;" id = "hiddenStarFour" class = "hidden">
+    <img src = "images/bluestar.jpg" style = "position:absolute;left:64%;top:70%;height:7%;width:10%;" id = "hiddenStarFive" class = "hidden">
+
+
+    <button class = "button" style = "position:absolute;left:68%;top:84%;width:29%;"> Submit </button>
+</div>
+
+
+
+<?php
+    include_once 'footer.php';
+?>
 
 <script>
 

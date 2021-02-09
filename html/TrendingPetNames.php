@@ -35,6 +35,14 @@ table, th, td {
         border-style: solid;
         
     }
+    
+    .blue{
+        background-color: lightblue;
+    }
+    
+    .pink{
+        background-color: lightpink;
+    }
 </style>
 <div class="backgroundImage">
 <br>
@@ -46,6 +54,11 @@ table, th, td {
 
 
 <table>
+    <colgroup>
+    <col class= "blue"/>
+    <col class="pink"/>
+    </colgroup>
+    
   <tr>
     <th>Animal</th>
     <th>Male</th>
@@ -54,37 +67,43 @@ table, th, td {
   </tr>
   <tr>
     <td>Dog</td>
-    <td><li>Tucker</li><li>Dakota</li><li>Jake</li><li>Bobbie</li><li>Pickle</li></td>
-    <td><li>Ripley<li>Gia</li><li>Bailey</li><li>Lola</li><li>Georgia</li></td>
+    <td class="blue"><li>Tucker</li><li>Dakota</li><li>Jake</li><li>Bobbie</li><li>Pickle</li></td>
+    
+    <td class="pink"><li>Ripley<li>Gia</li><li>Bailey</li><li>Lola</li><li>Georgia</li></td>
    
   </tr>
     
   <tr>
     <td>Cat</td>
-      <td><li>Winston</li><li>Leo</li><li>Milo</li><li>Shadow</li><li>Oliver</li></td>
-      <td><li>Cleo</li><li>Missy</li><li>Shadow</li><li>Minnie</li><li>Bella</li></td>
+      <td class="blue"><li>Winston</li><li>Leo</li><li>Milo</li><li>Shadow</li><li>Oliver</li></td>
+      
+      <td class="pink"><li>Cleo</li><li>Missy</li><li>Shadow</li><li>Minnie</li><li>Bella</li></td>
   </tr>
   <tr>
       <td>Snake</td>
-    <td><li>Noodles</li><li>Slinky</li><li>Buttercup</li><li>Diablo</li><li>Jafaar</li></td>
-    <td><li>Medusa</li><li>Juniper</li><li>Cherry</li><li>Bindi</li><li>Severus</li></td>
+    <td class="blue"><li>Noodles</li><li>Slinky</li><li>Buttercup</li><li>Diablo</li><li>Jafaar</li></td>
+    
+    <td class="pink"><li>Medusa</li><li>Juniper</li><li>Cherry</li><li>Bindi</li><li>Severus</li></td>
   </tr>
   <tr>
       <td>Bunny</td>
-    <td><li>Thumper</li><li>Oreo</li><li>Whiskers</li><li>Drax</li><li>Midnight</li></td>
-      <td><li>Snowball</li><li>Rose</li><li>Luna</li><li>Gretta</li><li>Binky</li></td>
+    <td class="blue"><li>Thumper</li><li>Oreo</li><li>Whiskers</li><li>Drax</li><li>Midnight</li></td>
+    
+    <td class="pink"><li>Snowball</li><li>Rose</li><li>Luna</li><li>Gretta</li><li>Binky</li></td>
  
   </tr>
   <tr>
     <td>Fish</td>
-      <td><li>Nemo</li><li>Apollo</li><li>Bubbles</li><li>Pickle</li><li>Captain</li></td>
-      <td><li>Dori</li><li>Coral</li><li>Penny</li><li>Goldie</li><li>Jewel</li></td>
+      <td class="blue"><li>Nemo</li><li>Apollo</li><li>Bubbles</li><li>Pickle</li><li>Captain</li></td>
+      
+      <td class="pink"><li>Dori</li><li>Coral</li><li>Penny</li><li>Goldie</li><li>Jewel</li></td>
    
   </tr>
   <tr>
     <td>Bird</td>
-    <td><li>Mojo</li><li>Rico</li><li>Sky</li><li>Jay</li><li>Oscar</li></td>
-      <td><li>Tweetie</li><li>Kiwi</li><li>Tiki</li><li>Luna</li><li>Skye</li></td>
+    <td class="blue"><li>Mojo</li><li>Rico</li><li>Sky</li><li>Jay</li><li>Oscar</li></td>
+    
+    <td class="pink"><li>Tweetie</li><li>Kiwi</li><li>Tiki</li><li>Luna</li><li>Skye</li></td>
   </tr>
 
 </table>

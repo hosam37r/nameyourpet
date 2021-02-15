@@ -1,0 +1,29 @@
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+
+#center{
+    position:absolute;
+    left:31%;
+    top:17%;
+    width:50%;
+    height:27%;
+    background-color:RGB(234, 234, 234);
+}
+#leftBar{
+    position:absolute;
+    left:15%;
+    top:17%;
+    background-color:RGB(234,234,234);
+    height:50%;
+    width:15%;
+}
+#centerPageHeader{
+    position:absolute;
+    left:10%;
+    top:10%;
+    font-size:1.5em;
+}
+.button {
+    background-color: #001dc0;
+}
+

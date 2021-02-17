@@ -12,10 +12,13 @@
 <!-- cssPage -->
 <link rel="stylesheet" href="universalStyle.css">
 
+
+
+<!--
+    All the images should be put into a seperate folder labelled "images"
+-->
+
 <style>
-
-
-
 
 
 
@@ -23,7 +26,7 @@
 </head>
 <body>
 
-<div style = "position:fixed;top:0%;height:6%;left:0%;width:99.8%;background-color:rgb(214, 214, 214);border:solid 1px blue;">
+<div style = "position:fixed;top:0%;height:6%;left:0%;width:99.8%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- Header  -->
 
     <img src = "images/doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 
@@ -54,23 +57,30 @@
     <h3 id = "centerPageHeader">Your page header here</h3>  <!-- Page Heading Here -->
 
  
-
+<!-- can put main stuff here, make div larger by editing universal style the id called centerPageHeader  -->
 
 
 
 </div>
 
 
-<div id="mySidenav" class="sidenav">
+<div id="mySidenav" class="sidenav"><!-- Side Nav  -->
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+
+
+
     <h3>Sample Text</h3>
+
+
+
+
+
   </div>
   
 
-  <span style="font-size:30px;cursor:pointer;position:relative;top:13%;" onclick="openNav()">&#9776; open</span>
-
-
-<div style = "position:fixed;left:0%;bottom:0%;width:100%;height:15%;background-color:rgb(214, 214, 214);border:solid 1px blue;">
+  <span style="font-size:30px;cursor:pointer;position:relative;top:13%;" onclick="openNav()">&#9776; open</span><!-- side nav button  -->
+<div style = "position:fixed;left:0%;bottom:0%;width:100%;height:15%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- footer  -->
 
         <h3 style = "position:absolute;left:5%;top:2%;">We are committed to naming pets</h3>
         <p style = "position:absolute;left:5%;top:26%;width:15%;">Feel free to take our quiz and use the results to name your awesome pet.  Leave us some feedback about how great our web site is!<p> 

@@ -1,1 +1,8 @@
 This folder is for the script 
+___________________________________________________________________________________________________________________________
+
+script.js is the JavaScript file that contains the script for the quiz. Use the following in the html file to link.
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> <!-- inlcude JQuery link -->
+<script type="text/javascript" src="script.js"></script> <!-- src may change, restructure filepath as necessary -->
+___________________________________________________________________________________________________________________________

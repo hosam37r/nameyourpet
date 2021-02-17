@@ -49,9 +49,7 @@
 
 
 </div>
-<div id = "lowerNav">
-    <h3 style = "position:absolute;left:1%;top:-50%;color:white;font-family: 'Josefin Sans', sans-serif;">Home ></h3>
-</div>
+
 
 <div id = "center">
     <h3 id = "centerPageHeader">Your page header here</h3>  <!-- Page Heading Here -->
@@ -63,23 +61,8 @@
 
 </div>
 
-
-<div id="mySidenav" class="sidenav"><!-- Side Nav  -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
-
-
-    <h3>Sample Text</h3>
-
-
-
-
-
-  </div>
   
 
-  <span style="font-size:30px;cursor:pointer;position:relative;top:13%;" onclick="openNav()">&#9776; open</span><!-- side nav button  -->
 <div style = "position:fixed;left:0%;bottom:0%;width:100%;height:15%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- footer  -->
 
         <h3 style = "position:absolute;left:5%;top:2%;">We are committed to naming pets</h3>
@@ -95,13 +78,6 @@
 
 <script>
 
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
 
 </script>
 </body>

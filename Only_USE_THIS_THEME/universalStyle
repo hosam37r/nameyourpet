@@ -56,7 +56,7 @@ body{
     z-index: 1;
     top: 8.8%;
     left: 0;
-    background-color: rgb(3, 133, 255);
+    background-color: rgb(98, 197, 255);
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;

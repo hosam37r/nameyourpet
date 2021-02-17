@@ -1,6 +1,6 @@
 This folder is for the script 
 ___________________________________________________________________________________________________________________________
-
+COMMIT ALL CHANGES OF SCRIPT TO SCRIPT.JS  THIS MAKES ASSOCIATED HTML CODE MORE READABLE.
 script.js is the JavaScript file that contains the script for the quiz. Use the following in the html file to link.
 
 <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script> <!-- inlcude JQuery link -->

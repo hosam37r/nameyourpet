@@ -23,6 +23,7 @@
 
 
 </style>
+
 </head>
 <body>
 
@@ -49,11 +50,7 @@
 
 
 </div>
-<span style="font-size:30px;cursor:pointer;position:relative;top:13%;" onclick="openNav()">&#9776; open</span><!-- side nav button  -->
 
-<div id = "lowerNav">
-    <h3 style = "position:absolute;left:1%;top:-50%;color:white;font-family: 'Josefin Sans', sans-serif;">Home </h3>
-</div>
 
 <div id = "center">
     <h3 id = "centerPageHeader">Contact Us</h3>  <!-- Page Heading Here -->
@@ -64,46 +61,28 @@
     <!--<h3 style = "position:absolute;left:5%;top:5%;font-size:1.5em;" >Email Us</h3>-->
     <h3>Email Us</h3>
     <form>
-        <input type="text" id="fname" name="fname" value="full name" style = ""><p></p>
-        <input type="text" id="email" name="email" value="email" style = ""><p></p>
-        <input type="text" id="phone" name="phone" value="phone number" style = ""><p></p>
-        <input type="text" id="texts" name="texts" value="send us a message" style = ""><p></p>
+        <input type="text" id="fname" name="fname" placeholder="full name" style = ""><p></p>
+        <input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
+        <input type="text" id="phone" name="phone" placeholder="phone number" style = ""><p></p>
+        <input type="text" id="texts" name="texts" placeholder="send us a message" style = ""><p></p>
     </form>
 
     <h3 style = "">Rate Us</h3>
-    <img onclick = "submitOne()" src = "images/star.png" style = "height:7%;width:10%;" id = "starOne" onmouseover="oneStar();" onmouseout="clearStars();">
-    <img onclick = "submitTwo();" src = "images/star.png" style = "height:7%;width:10%;" id = "starTwo" onmouseover="twoStar();" onmouseout="clearStars();">
-    <img  onclick = "submitThree();" src = "images/star.png" style = "height:7%;width:10%;" id = "starThree" onmouseover="threeStar();" onmouseout="clearStars();">
-    <img onclick = "submitFour();" src = "images/star.png" style = "height:7%;width:10%;" id = "starFour" onmouseover="fourStar();" onmouseout="clearStars();">
-    <img  onclick = "submitFive();" src = "images/star.png" style = "height:7%;width:10%;" id = "starFive" onmouseover="fiveStar();" onmouseout="clearStars();">
+    <img onclick = "submitOne();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starOne" onmouseover="oneStar();" onmouseout="clearStars();">
+    <img onclick = "submitTwo();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starTwo" onmouseover="twoStar();" onmouseout="clearStars();">
+    <img  onclick = "submitThree();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starThree" onmouseover="threeStar();" onmouseout="clearStars();">
+    <img onclick = "submitFour();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starFour" onmouseover="fourStar();" onmouseout="clearStars();">
+    <img  onclick = "submitFive();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starFive" onmouseover="fiveStar();" onmouseout="clearStars();">
 
-    <img src = "images/bluestar.png" style = "height:7%;width:10%;" id = "hiddenStarOne" class = "hidden">
-    <img src = "images/bluestar.png" style = "height:7%;width:10%;" id = "hiddenStarTwo" class = "hidden">
-    <img src = "images/bluestar.png" style = "height:7%;width:10%;" id = "hiddenStarThree" class = "hidden">
-    <img src = "images/bluestar.png" style = "height:7%;width:10%;" id = "hiddenStarFour" class = "hidden">
-    <img src = "images/bluestar.png" style = "height:7%;width:10%;" id = "hiddenStarFive" class = "hidden">
+    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarOne" class = "hidden">
+    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarTwo" class = "hidden">
+    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarThree" class = "hidden">
+    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFour" class = "hidden">
+    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFive" class = "hidden">
 
-
-    <button class = "button" style = ""> Submit </button>
+    <br>
+    <button class = "button" style = "">Submit</button>
 </div>
-
-
-</div>
-
-
-<div id="mySidenav" class="sidenav"><!-- Side Nav  -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-
-
-
-
-    <h3>Sample Text</h3>
-
-
-
-
-
-  </div>
   
 
 <div style = "position:fixed;left:0%;bottom:0%;width:100%;height:15%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- footer  -->
@@ -118,16 +97,7 @@
         <a href = "https://www.tiktok.com"> <img src = "images/tt.jpg" style = "position:absolute;left:57%;top:20%;width:2%;height:20%;"></a>
         <a href = "https://www.twitter.com"> <img src = "images/tw.jpg" style = "position:absolute;left:61%;top:20%;width:2%;height:20%;"></a>
         <h3 style = "position:absolute;left:50%;bottom:20%;">Share Us!</h3>
-
-<script>
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
+        <script type="text/JavaScript">
 
 
 document.getElementById('starOne').onmouseover=function(){oneStar();};
@@ -138,34 +108,34 @@ document.getElementById('starFive').onmouseover=function(){fiveStar();};
 
 function fiveStar(){
     fourStar();
-    document.getElementById('starFive').src = "images/bluestar.jpg";
+    document.getElementById('starFive').src = "images/bluestar.png";
 }
 
 function fourStar(){
     threeStar();
-    document.getElementById('starFour').src = "images/bluestar.jpg";
+    document.getElementById('starFour').src = "images/bluestar.png";
 }
 
 function threeStar(){
     twoStar();
-    document.getElementById('starThree').src = "images/bluestar.jpg";
+    document.getElementById('starThree').src = "images/bluestar.png";
 }
 
 function twoStar(){
     oneStar();
-    document.getElementById('starTwo').src = "images/bluestar.jpg";
+    document.getElementById('starTwo').src = "images/bluestar.png";
 }
 
 function oneStar(){
-    document.getElementById('starOne').src = "images/bluestar.jpg";
+    document.getElementById('starOne').src = "images/bluestar.png";
 }
 
 function clearStars(){
-    document.getElementById('starOne').src = "images/star.jpg";
-    document.getElementById('starTwo').src = "images/star.jpg";
-    document.getElementById('starThree').src = "images/star.jpg";
-    document.getElementById('starFour').src = "images/star.jpg";
-    document.getElementById('starFive').src = "images/star.jpg";
+    document.getElementById('starOne').src = "images/star.png";
+    document.getElementById('starTwo').src = "images/star.png";
+    document.getElementById('starThree').src = "images/star.png";
+    document.getElementById('starFour').src = "images/star.png";
+    document.getElementById('starFive').src = "images/star.png";
 }
 function eraseStars(){
     document.getElementById("starOne").classList.add("hidden");
@@ -196,7 +166,7 @@ function submitFive(){
     document.getElementById("hiddenStarFive").classList.remove("hidden");
 }
 
-
 </script>
+
 </body>
 </html>

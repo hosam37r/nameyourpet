@@ -29,23 +29,19 @@
 
 <div style = "position:fixed;top:0%;height:6%;left:0%;width:99.8%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- Header  -->
 
-    <img src = "images/doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "../Only_USE_THIS_THEME/doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 
-    <a href = " "><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
+    <a href = "index.html"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
 
-    <img src = "images/kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "../Only_USE_THIS_THEME/kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
 
-    <a href = ""><button class = "headerBut">Contact Us</button></a> <!-- fill in your url to the page -->
+    <a href = "contactUs.php"><button class = "headerBut">Contact Us</button></a> <!-- fill in your url to the page -->
 
-    <img src = "images/iguanaWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "../Only_USE_THIS_THEME/iguanaWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 
-    <a href = ""><button class = "headerBut">Index</button></a> <!-- fill in your url to the page -->
+    <a href = "TrendingPetNames.php"><button class = "headerBut">Trending</button></a> <!-- fill in your url to the page -->
 
-    <img src = "images/doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
-
-    <a href = ""><button class = "headerBut">Trending</button></a> <!-- fill in your url to the page -->
-
-    <img src = "images/fishWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "../Only_USE_THIS_THEME/fishWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 
 
 
@@ -68,17 +64,17 @@
     </form>
 
     <h3 style = "">Rate Us</h3>
-    <img onclick = "submitOne();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starOne" onmouseover="oneStar();" onmouseout="clearStars();">
-    <img onclick = "submitTwo();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starTwo" onmouseover="twoStar();" onmouseout="clearStars();">
-    <img  onclick = "submitThree();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starThree" onmouseover="threeStar();" onmouseout="clearStars();">
-    <img onclick = "submitFour();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starFour" onmouseover="fourStar();" onmouseout="clearStars();">
-    <img  onclick = "submitFive();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starFive" onmouseover="fiveStar();" onmouseout="clearStars();">
+    <img onclick = "submitOne();" src = "../Only_USE_THIS_THEME/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starOne" onmouseover="oneStar();" onmouseout="clearStars();">
+    <img onclick = "submitTwo();" src = "../Only_USE_THIS_THEME/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starTwo" onmouseover="twoStar();" onmouseout="clearStars();">
+    <img  onclick = "submitThree();" src = "../Only_USE_THIS_THEME/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starThree" onmouseover="threeStar();" onmouseout="clearStars();">
+    <img onclick = "submitFour();" src = "../Only_USE_THIS_THEME/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starFour" onmouseover="fourStar();" onmouseout="clearStars();">
+    <img  onclick = "submitFive();" src = "../Only_USE_THIS_THEME/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starFive" onmouseover="fiveStar();" onmouseout="clearStars();">
 
-    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarOne" class = "hidden">
-    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarTwo" class = "hidden">
-    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarThree" class = "hidden">
-    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFour" class = "hidden">
-    <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFive" class = "hidden">
+    <img src = "../Only_USE_THIS_THEME/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarOne" class = "hidden">
+    <img src = "../Only_USE_THIS_THEME/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarTwo" class = "hidden">
+    <img src = "../Only_USE_THIS_THEME/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarThree" class = "hidden">
+    <img src = "../Only_USE_THIS_THEME/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFour" class = "hidden">
+    <img src = "../Only_USE_THIS_THEME/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFive" class = "hidden">
 
     <br>
     <button class = "button" style = "">Submit</button>
@@ -90,12 +86,12 @@
         <h3 style = "position:absolute;left:5%;top:2%;">We are committed to naming pets</h3>
         <p style = "position:absolute;left:5%;top:26%;width:15%;">Feel free to take our quiz and use the results to name your awesome pet.  Leave us some feedback about how great our web site is!<p> 
 
-        <a href = "https://www.facebook.com"> <img src = "images/fb.jpg" style = "position:absolute;left:41%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.instagram.com"> <img src = "images/ig.jpg" style = "position:absolute;left:45%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.pinterest.com"> <img src = "images/pn.jpg" style = "position:absolute;left:49%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.reddit.com"> <img src = "images/rd.jpg" style = "position:absolute;left:53%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.tiktok.com"> <img src = "images/tt.jpg" style = "position:absolute;left:57%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.twitter.com"> <img src = "images/tw.jpg" style = "position:absolute;left:61%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.facebook.com"> <img src = "../Only_USE_THIS_THEME/fb.jpg" style = "position:absolute;left:41%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.instagram.com"> <img src = "../Only_USE_THIS_THEME/ig.jpg" style = "position:absolute;left:45%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.pinterest.com"> <img src = "../Only_USE_THIS_THEME/pn.jpg" style = "position:absolute;left:49%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.reddit.com"> <img src = "../Only_USE_THIS_THEME/rd.jpg" style = "position:absolute;left:53%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.tiktok.com"> <img src = "../Only_USE_THIS_THEME/tt.jpg" style = "position:absolute;left:57%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.twitter.com"> <img src = "../Only_USE_THIS_THEME/tw.jpg" style = "position:absolute;left:61%;top:20%;width:2%;height:20%;"></a>
         <h3 style = "position:absolute;left:50%;bottom:20%;">Share Us!</h3>
         <script type="text/JavaScript">
 
@@ -108,34 +104,34 @@ document.getElementById('starFive').onmouseover=function(){fiveStar();};
 
 function fiveStar(){
     fourStar();
-    document.getElementById('starFive').src = "images/bluestar.png";
+    document.getElementById('starFive').src = "../Only_USE_THIS_THEME/bluestar.png";
 }
 
 function fourStar(){
     threeStar();
-    document.getElementById('starFour').src = "images/bluestar.png";
+    document.getElementById('starFour').src = "../Only_USE_THIS_THEME/bluestar.png";
 }
 
 function threeStar(){
     twoStar();
-    document.getElementById('starThree').src = "images/bluestar.png";
+    document.getElementById('starThree').src = "../Only_USE_THIS_THEME/bluestar.png";
 }
 
 function twoStar(){
     oneStar();
-    document.getElementById('starTwo').src = "images/bluestar.png";
+    document.getElementById('starTwo').src = "../Only_USE_THIS_THEME/bluestar.png";
 }
 
 function oneStar(){
-    document.getElementById('starOne').src = "images/bluestar.png";
+    document.getElementById('starOne').src = "../Only_USE_THIS_THEME/bluestar.png";
 }
 
 function clearStars(){
-    document.getElementById('starOne').src = "images/star.png";
-    document.getElementById('starTwo').src = "images/star.png";
-    document.getElementById('starThree').src = "images/star.png";
-    document.getElementById('starFour').src = "images/star.png";
-    document.getElementById('starFive').src = "images/star.png";
+    document.getElementById('starOne').src = "../Only_USE_THIS_THEME/star.png";
+    document.getElementById('starTwo').src = "../Only_USE_THIS_THEME/star.png";
+    document.getElementById('starThree').src = "../Only_USE_THIS_THEME/star.png";
+    document.getElementById('starFour').src = "../Only_USE_THIS_THEME/star.png";
+    document.getElementById('starFive').src = "../Only_USE_THIS_THEME/star.png";
 }
 function eraseStars(){
     document.getElementById("starOne").classList.add("hidden");

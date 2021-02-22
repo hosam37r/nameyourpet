@@ -6,7 +6,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: 'Josefin Sans', sans-serif;;}
     left:17%;
     top:15%;
     width:50%;
-    height:27%;
+    height:55%;
     background-color:RGB(234, 234, 234);
 }
 #leftBar{
@@ -14,8 +14,9 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: 'Josefin Sans', sans-serif;;}
     left:2%;
     top:15%;
     background-color:RGB(234,234,234);
-    height:65%;
+    height:55%;
     width:15%;
+    text-align: center;
 }
 .hidden{
     display:none;
@@ -34,7 +35,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: 'Josefin Sans', sans-serif;;}
     color:white;
 }
 body{
-    background-image:url("images/background.jpg");
+    background-image:url("../Only_USE_THIS_THEME/background.jpg");
     background-color: #cccccc; /* Used if the image is unavailable */
   height: 750px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -49,6 +50,19 @@ body{
     height:3%;
     background-color:rgb(121, 121, 121);
 }
+.button {
+    width: 50%;
+    background-color: rgb(0, 95, 150);
+    color: white;
+    padding: 14px 20px ;
+    border: none;
+    margin: 20px 0 0 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .button:hover {
+    background-color: rgb(80, 143, 179);
+  }
  /***********BEGIN QUIZ STYLING************/
   /* container of box 1-3 */
   .main{

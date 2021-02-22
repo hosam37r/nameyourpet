@@ -93,6 +93,8 @@
         <a href = "https://www.tiktok.com"> <img src = "../Only_USE_THIS_THEME/tt.jpg" style = "position:absolute;left:57%;top:20%;width:2%;height:20%;"></a>
         <a href = "https://www.twitter.com"> <img src = "../Only_USE_THIS_THEME/tw.jpg" style = "position:absolute;left:61%;top:20%;width:2%;height:20%;"></a>
         <h3 style = "position:absolute;left:50%;bottom:20%;">Share Us!</h3>
+    
+    </div>
         <script type="text/JavaScript">
 
 

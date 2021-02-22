@@ -18,13 +18,13 @@ home is index.php, contact us, trending (fix header and links to pages, no index
     
 <div style = "position:fixed;top:0%;height:6%;left:0%;width:99.8%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- Header  -->
 
-    <img src = "doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "../Only_USE_THIS_THEME/doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
     <a href = "index.html"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
-    <img src = "kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "../Only_USE_THIS_THEME/kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
     <a href = "contactUs.php"><button class = "headerBut">Contact Us</button></a> <!-- fill in your url to the page -->
-    <img src = "iguanaWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "../Only_USE_THIS_THEME/iguanaWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
     <a href = "TrendingPetNames.php"><button class = "headerBut">Trending</button></a> <!-- fill in your url to the page -->
-    <img src = "fishWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "../Only_USE_THIS_THEME/fishWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 </div>
 
 
@@ -204,12 +204,12 @@ function closeNav() {
         <h3 style = "position:absolute;left:5%;top:2%;">We are committed to naming pets</h3>
         <p style = "position:absolute;left:5%;top:26%;width:15%;">Feel free to take our quiz and use the results to name your awesome pet.  Leave us some feedback about how great our web site is!<p> 
 
-        <a href = "https://www.facebook.com"> <img src = "fb.jpg" style = "position:absolute;left:41%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.instagram.com"> <img src = "ig.jpg" style = "position:absolute;left:45%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.pinterest.com"> <img src = "pn.jpg" style = "position:absolute;left:49%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.reddit.com"> <img src = "rd.jpg" style = "position:absolute;left:53%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.tiktok.com"> <img src = "tt.jpg" style = "position:absolute;left:57%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.twitter.com"> <img src = "tw.jpg" style = "position:absolute;left:61%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.facebook.com"> <img src = "../Only_USE_THIS_THEME/fb.jpg" style = "position:absolute;left:41%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.instagram.com"> <img src = "../Only_USE_THIS_THEME/ig.jpg" style = "position:absolute;left:45%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.pinterest.com"> <img src = "../Only_USE_THIS_THEME/pn.jpg" style = "position:absolute;left:49%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.reddit.com"> <img src = "../Only_USE_THIS_THEME/rd.jpg" style = "position:absolute;left:53%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.tiktok.com"> <img src = "../Only_USE_THIS_THEME/tt.jpg" style = "position:absolute;left:57%;top:20%;width:2%;height:20%;"></a>
+        <a href = "https://www.twitter.com"> <img src = "../Only_USE_THIS_THEME/tw.jpg" style = "position:absolute;left:61%;top:20%;width:2%;height:20%;"></a>
         <h3 style = "position:absolute;left:50%;bottom:20%;">Share Us!</h3>
 
     </div>

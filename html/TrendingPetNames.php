@@ -8,6 +8,7 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+home is index.php, contact us, trending (fix header and links to pages, no index on header)
 
 <!-- cssPage -->
 <link rel="stylesheet" href="universalStyle.css">
@@ -18,13 +19,11 @@
 <div style = "position:fixed;top:0%;height:6%;left:0%;width:99.8%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- Header  -->
 
     <img src = "doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
-    <a href = " "><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
+    <a href = "index.html"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
     <img src = "kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
-    <a href = ""><button class = "headerBut">Contact Us</button></a> <!-- fill in your url to the page -->
-    <img src = "iguanaWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
-    <a href = ""><button class = "headerBut">Index</button></a> <!-- fill in your url to the page -->
+    <a href = "contactUs.php"><button class = "headerBut">Contact Us</button></a> <!-- fill in your url to the page -->
     <img src = "doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
-    <a href = ""><button class = "headerBut">Trending</button></a> <!-- fill in your url to the page -->
+    <a href = "TrendingPetNames.php"><button class = "headerBut">Trending</button></a> <!-- fill in your url to the page -->
     <img src = "fishWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 </div>
 
@@ -58,6 +57,7 @@
         </div>
         </div>
     </div>
+    
     
 <!-- 
     <td>Cat</td>
@@ -177,6 +177,7 @@
         display: flex;
         float: left;
     }
+   
 </style>
 <script>
 function openNav() {

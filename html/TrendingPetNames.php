@@ -22,7 +22,7 @@ home is index.php, contact us, trending (fix header and links to pages, no index
     <a href = "index.html"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
     <img src = "kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
     <a href = "contactUs.php"><button class = "headerBut">Contact Us</button></a> <!-- fill in your url to the page -->
-    <img src = "doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
+    <img src = "iguanaWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
     <a href = "TrendingPetNames.php"><button class = "headerBut">Trending</button></a> <!-- fill in your url to the page -->
     <img src = "fishWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 </div>

@@ -49,3 +49,100 @@ body{
     height:3%;
     background-color:rgb(121, 121, 121);
 }
+ /***********BEGIN QUIZ STYLING************/
+  /* container of box 1-3 */
+  .main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+/* container item #1 holds <h3> heading */
+.box1{
+    text-align: center;
+    color:white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:3px 3px navy;
+    
+}
+
+/* container item #2 holds clickables e.g. dog, cat, other */
+.box2{
+    text-align: center;
+    
+    
+}
+
+/* container item #3 holds back button*/
+.box3{
+    text-align: center;
+    
+}
+
+/* unordered list for dog, cat, other */
+ #choices {
+    list-style-type: none;
+    color:white;
+    text-align: center;
+}
+
+/* each list item for dog, cat, other */
+ #choices li{
+    width: 368px;
+    margin-bottom:10px;
+    padding:5px;
+    text-align:center;
+    border-style:solid;
+    border-color:navy;
+    border-radius: 4px;
+
+}
+
+/* anchor dog, cat, other */
+#choices li a{
+    display:block;/*makes whole row with link clickable */
+    text-decoration: none;
+    color:white;
+    font-size:28px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:3px 3px navy;
+    
+        
+}
+
+li:hover{
+    background-color: lightskyblue;
+}
+#back{
+    background-color:navy;
+    color:white;
+    font-size:28px;
+    font-weight: bold;
+    border-radius:4px;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 1px 1px black;
+}
+#back:hover{
+    background-color: yellow;
+    color:black;
+}
+#centerQuiz{
+    position:absolute;
+    left:17%;
+    top:15%;
+    width:50%;
+    height:60%;
+    /*background-image:url('images/background.jpg');*/
+    background-color:rgb(171, 176, 194);
+    border-style: solid;
+    border-width: 1px;
+    border-radius:5px;
+    box-shadow: 10px 10px 5px navy;
+}
+/********** END QUIZ STYLING **********/

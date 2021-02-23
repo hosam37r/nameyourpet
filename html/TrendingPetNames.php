@@ -8,7 +8,6 @@
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
-home is index.php, contact us, trending (fix header and links to pages, no index on header)
 
 <!-- cssPage -->
 <link rel="stylesheet" href="universalStyle.css">

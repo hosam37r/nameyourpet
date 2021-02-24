@@ -18,7 +18,7 @@
 <div style = "position:fixed;top:0%;height:6%;left:0%;width:99.8%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- Header  -->
 
     <img src = "../Only_USE_THIS_THEME/doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
-    <a href = "index.html"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
+    <a href = "index.php"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
     <img src = "../Only_USE_THIS_THEME/kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
     <a href = "contactUs.php"><button class = "headerBut">Contact Us</button></a> <!-- fill in your url to the page -->
     <img src = "../Only_USE_THIS_THEME/iguanaWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">

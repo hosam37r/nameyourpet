@@ -31,7 +31,7 @@
 
     <img src = "../Only_USE_THIS_THEME/doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 
-    <a href = "index.html"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
+    <a href = "index.php"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
 
     <img src = "../Only_USE_THIS_THEME/kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
 

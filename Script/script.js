@@ -907,6 +907,7 @@
 			var current_id = null;
 			var isNameNode = false;
 			var current_rdm;
+			var name_dict = {};
 
 			var renderList = function(items) {
 
@@ -944,16 +945,17 @@
 				current_id = choiceId;
 
 				var kids = tree.getChildren(choiceId);
-				var test = tree.choices[choiceId].final;
-				var test2 = tree.choices[choiceId].children;
+				var isFinal = tree.choices[choiceId].final;
 
-				if (test == 'yes'){
+				if (isFinal == 'yes'){
 					isNameNode = true;
 					$newname.css("display", "inline");
 
-					current_rdm = Math.floor(Math.random() * test2.length);
+					current_rdm = Math.floor(Math.random() * kids.length);
+					name_dict[current_rdm] = 1;
+					
 					renderListRndm(kids[current_rdm]);
-				}            
+				}
 				else {
 					isNameNode = false;
 					$newname.css("display", "none");
@@ -980,6 +982,8 @@
 					_doInitial();
 				}
 
+				name_dict = {};
+
 			});
 
 			/* Click handler for new name button */
@@ -989,16 +993,23 @@
 				if((!current_id) || (!isNameNode)) return false;
 
 				var kids = tree.getChildren(current_id);
-				var test = tree.choices[current_id].final;
-				var test2 = tree.choices[current_id].children;
+				var isFinal = tree.choices[current_id].final;
 
-				if (test == 'yes'){
+				if (isFinal == 'yes'){
+					if (Object.keys(name_dict).length == kids.length) {
+						name_dict = {};
+					}
+
 					var random;
 					do {
-						random = Math.floor(Math.random() * test2.length);
-					}while (current_rdm == random);
+						random = Math.floor(Math.random() * kids.length);
+						if (!name_dict.hasOwnProperty(random)) {
+							break;
+						}
+					}while (true);
 
 					current_rdm = random;
+					name_dict[current_rdm] = 1;
 					renderListRndm(kids[random]);
 				} 
 

@@ -56,11 +56,14 @@
 <div id = "leftBar">
     <!--<h3 style = "position:absolute;left:5%;top:5%;font-size:1.5em;" >Email Us</h3>-->
     <h3>Email Us</h3>
-    <form>
-        <input type="text" id="fname" name="fname" placeholder="full name" style = ""><p></p>
-        <input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
-        <input type="text" id="phone" name="phone" placeholder="phone number" style = ""><p></p>
-        <input type="text" id="texts" name="texts" placeholder="send us a message" style = ""><p></p>
+    <form action="contactForm.php" method="post">
+        <input type="text" id="fname" name="name" placeholder="name" style = ""><p></p>
+        <input type="text" id="email" name="email" placeholder="mail" style = ""><p></p>
+        <input type="text" id="phone" name="subject" placeholder="subject" style = ""><p></p>
+        <input type="text" id="texts" name="message" placeholder="message" style = ""><p></p>
+        
+        <button class = "button" style = "">Submit</button>
+        
     </form>
 
     <h3 style = "">Rate Us</h3>
@@ -77,7 +80,7 @@
     <img src = "../Only_USE_THIS_THEME/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFive" class = "hidden">
 
     <br>
-    <button class = "button" style = "">Submit</button>
+    
 </div>
   
 

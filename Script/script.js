@@ -396,7 +396,7 @@
 				'cat_female_category': {
 					name: 'Name based on category?',
 					final: 'no',
-					children: ['cat_female_traditional', 'cat_female_unique', 'cat_female_pun_ny', 'cat_female_gender_neutral']
+					children: ['cat_female_traditional', 'cat_female_unique', 'cat_female_pun_ny']
 				},
 
 				/*

@@ -25,10 +25,10 @@
     <a href = "TrendingPetNames.php"><button class = "headerBut">Trending</button></a> <!-- fill in your url to the page -->
     <img src = "../Only_USE_THIS_THEME/fishWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
 </div>
-
-
 <div id = "center">
-    <h2 id = "centerPageHeader">Trending Pet Names in 2021</h2>  <!-- Page Heading Here -->
+    <h2 id = "centerPageHeader">Trending Pet Names in 2021</h2>  
+    
+    <!-- Page Heading Here -->
     
     <div class= "dog_male">
     <div class="option_list_male">
@@ -56,6 +56,8 @@
         </div>
         </div>
     </div>
+    
+    
     
     
 <!-- 
@@ -90,14 +92,11 @@
     
     <td class="pink"><li>Tweetie</li><li>Kiwi</li><li>Tiki</li><li>Luna</li><li>Skye</li></td>
   </tr>
-
 </table>
     
 <!-- can put main stuff here, make div larger by editing universal style the id called centerPageHeader  -->
 </div>
-
 <style> 
-
     h2 {
         text-align: center;
         font-size: 35px;
@@ -128,7 +127,6 @@
         border-style: solid;
         
     }
-
     .dog {
        position:absolute;
        margin:0; 
@@ -137,7 +135,6 @@
        font-size: 0.8em;
     }
     
-
     .option_list_male .option_male {
     background: aliceblue;
     border: 1px solid #84c5fe;
@@ -148,7 +145,6 @@
     justify-content: space-between;
     margin-left: 30px;
     margin-top: 10px;
-    cursor: pointer;
     font-family: 'Pacifico', cursive; 
     }
     
@@ -162,7 +158,6 @@
     justify-content: space-between;
     margin-left: 30px;
     margin-top: 10px;
-    cursor: pointer;
     font-family: 'Pacifico', cursive; 
     }
     
@@ -182,7 +177,6 @@
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
-
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
@@ -197,12 +191,9 @@ function closeNav() {
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   </div>
   
-
 <div style = "position:fixed;left:0%;bottom:0%;width:100%;height:15%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- footer  -->
-
         <h3 style = "position:absolute;left:5%;top:2%;">We are committed to naming pets</h3>
         <p style = "position:absolute;left:5%;top:26%;width:15%;">Feel free to take our quiz and use the results to name your awesome pet.  Leave us some feedback about how great our web site is!<p> 
-
         <a href = "https://www.facebook.com"> <img src = "../Only_USE_THIS_THEME/fb.jpg" style = "position:absolute;left:41%;top:20%;width:2%;height:20%;"></a>
         <a href = "https://www.instagram.com"> <img src = "../Only_USE_THIS_THEME/ig.jpg" style = "position:absolute;left:45%;top:20%;width:2%;height:20%;"></a>
         <a href = "https://www.pinterest.com"> <img src = "../Only_USE_THIS_THEME/pn.jpg" style = "position:absolute;left:49%;top:20%;width:2%;height:20%;"></a>
@@ -210,7 +201,6 @@ function closeNav() {
         <a href = "https://www.tiktok.com"> <img src = "../Only_USE_THIS_THEME/tt.jpg" style = "position:absolute;left:57%;top:20%;width:2%;height:20%;"></a>
         <a href = "https://www.twitter.com"> <img src = "../Only_USE_THIS_THEME/tw.jpg" style = "position:absolute;left:61%;top:20%;width:2%;height:20%;"></a>
         <h3 style = "position:absolute;left:50%;bottom:20%;">Share Us!</h3>
-
     </div>
 </body>
 </html>

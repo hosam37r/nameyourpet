@@ -1,4 +1,5 @@
-/*** Top-down tree for questions and names ***/
+
+		/*** Top-down tree for questions and names ***/
 
 		var data = {
 			initial: ['dogs', 'cats', 'birds', 'fish', 'bunnies', 'smallAnimal', 'reptiles'],
@@ -384,7 +385,7 @@
 				'cat_male_category': {
 					name: 'Name based on category?',
 					final: 'no',
-					children: ['cat_male_traditional', 'cat_male_unique', 'cat_male_pun_ny', 'cat_male_gender_neutral']
+					children: ['cat_male_traditional', 'cat_male_unique', 'cat_male_pun_ny']
 				},
 
 				'cat_female_color': {
@@ -396,7 +397,7 @@
 				'cat_female_category': {
 					name: 'Name based on category?',
 					final: 'no',
-					children: ['cat_female_traditional', 'cat_female_unique', 'cat_female_pun_ny', 'cat_female_gender_neutral']
+					children: ['cat_female_traditional', 'cat_female_unique', 'cat_female_pun_ny']
 				},
 
 				/*
@@ -507,12 +508,6 @@
 					children: ['cat_male_pun_ny1', 'cat_male_pun_ny2', 'cat_male_pun_ny3', 'cat_male_pun_ny4', 'cat_male_pun_ny5', 'cat_male_pun_ny6', 'cat_male_pun_ny7', 'cat_male_pun_ny8', 'cat_male_pun_ny9', 'cat_male_pun_ny10']
 				},
 
-				'cat_male_gender_neutral': {
-					name: 'Gender Neutral',
-					final: 'yes',
-					children: ['cat_male_gender_neutral1', 'cat_male_gender_neutral2', 'cat_male_gender_neutral3', 'cat_male_gender_neutral4', 'cat_male_gender_neutral5', 'cat_male_gender_neutral6', 'cat_male_gender_neutral7', 'cat_male_gender_neutral8', 'cat_male_gender_neutral9', 'cat_male_gender_neutral10', 'cat_male_gender_neutral11', 'cat_male_gender_neutral12']
-				},
-
 				'cat_female_traditional': {
 					name: 'Traditional',
 					final: 'yes',
@@ -529,12 +524,6 @@
 					name: 'Punny',
 					final: 'yes',
 					children: ['cat_female_pun_ny1', 'cat_female_pun_ny2', 'cat_female_pun_ny3', 'cat_female_pun_ny4', 'cat_female_pun_ny5', 'cat_female_pun_ny6', 'cat_female_pun_ny7', 'cat_female_pun_ny8', 'cat_female_pun_ny9', 'cat_female_pun_ny10']
-				},
-
-				'cat_female_gender_neutral': {
-					name: 'Gender Neutral',
-					final: 'yes',
-					children: ['cat_female_gender_neutral1', 'cat_female_gender_neutral2', 'cat_female_gender_neutral3', 'cat_female_gender_neutral4', 'cat_female_gender_neutral5', 'cat_female_gender_neutral6', 'cat_female_gender_neutral7', 'cat_female_gender_neutral8', 'cat_female_gender_neutral9', 'cat_female_gender_neutral10', 'cat_female_gender_neutral11', 'cat_female_gender_neutral12']
 				},
 
 				/*
@@ -902,11 +891,13 @@
 			var tree = new DecisionTree(data);
 			var $list = $('#choices');
 			var $title = $('h1');
-			var $newname = $('#newname');
+			var $backButton = $('#back');
+			var $newnameButton = $('#newname');
 
 			var current_id = null;
 			var isNameNode = false;
 			var current_rdm;
+			var name_dict = {};
 
 			var renderList = function(items) {
 
@@ -926,13 +917,16 @@
 				$title.text(title);
 
 				$list.empty();
-				$list.append('<li><a href="#" data-choice="' + item.id + '">' + item.name + '</a></li>');
+				$list.append('<li>' + item.name + '</li>');
 			};
 
 			var _doInitial = function() {
 
 				var initData = tree.getInitial();
 				current_id = null;
+
+				$backButton.css("display", "none");
+
 				renderList(initData);
 			};
 
@@ -944,19 +938,22 @@
 				current_id = choiceId;
 
 				var kids = tree.getChildren(choiceId);
-				var test = tree.choices[choiceId].final;
-				var test2 = tree.choices[choiceId].children;
+				var isFinal = tree.choices[choiceId].final;
 
-				if (test == 'yes'){
+				$backButton.css("display", "inline");
+
+				if (isFinal == 'yes'){
 					isNameNode = true;
-					$newname.css("display", "inline");
+					$newnameButton.css("display", "inline");
 
-					current_rdm = Math.floor(Math.random() * test2.length);
+					current_rdm = Math.floor(Math.random() * kids.length);
+					name_dict[current_rdm] = 1;
+					
 					renderListRndm(kids[current_rdm]);
-				}            
+				}
 				else {
 					isNameNode = false;
-					$newname.css("display", "none");
+					$newnameButton.css("display", "none");
 
 					renderList(kids);
 				}
@@ -970,7 +967,7 @@
 
 				var parents = tree.getParents(current_id);
 				isNameNode = false;
-				$newname.css("display", "none");
+				$newnameButton.css("display", "none");
 
 				if(parents.length > 0) {
 					var prev_node = parents.pop();
@@ -979,6 +976,8 @@
 				} else {
 					_doInitial();
 				}
+
+				name_dict = {};
 
 			});
 
@@ -989,16 +988,23 @@
 				if((!current_id) || (!isNameNode)) return false;
 
 				var kids = tree.getChildren(current_id);
-				var test = tree.choices[current_id].final;
-				var test2 = tree.choices[current_id].children;
+				var isFinal = tree.choices[current_id].final;
 
-				if (test == 'yes'){
+				if (isFinal == 'yes'){
+					if (Object.keys(name_dict).length == kids.length) {
+						name_dict = {};
+					}
+
 					var random;
 					do {
-						random = Math.floor(Math.random() * test2.length);
-					}while (current_rdm == random);
+						random = Math.floor(Math.random() * kids.length);
+						if (!name_dict.hasOwnProperty(random)) {
+							break;
+						}
+					}while (true);
 
 					current_rdm = random;
+					name_dict[current_rdm] = 1;
 					renderListRndm(kids[random]);
 				} 
 

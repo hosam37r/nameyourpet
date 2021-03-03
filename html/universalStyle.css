@@ -141,7 +141,7 @@ body{
 li:hover{
     background-color: rgb(17, 121, 185);
 }
-#back{
+#back, #newname{
     text-align: center;
     background-color:navy;
     color:white;

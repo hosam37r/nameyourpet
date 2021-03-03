@@ -137,7 +137,7 @@ li:hover{
     left:27%;
     top:15%;
     width:50%;
-    height:60%;
+    height:auto;
     /*background-image:url('images/background.jpg');*/
     background-color:rgb(171, 176, 194);
     border-style: solid;

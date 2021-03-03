@@ -35,7 +35,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: 'Josefin Sans', sans-serif;;}
     color:white;
 }
 body{
-    background-image:url("../Only_USE_THIS_THEME/background.jpg");
+    background-image:url("Images/background.jpg");
     background-color: #cccccc; /* Used if the image is unavailable */
   height: 750px; /* You must set a specified height */
   background-position: center; /* Center the image */
@@ -70,7 +70,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border-style:solid;
 }
 
 /* container item #1 holds <h3> heading */
@@ -82,24 +81,17 @@ body{
     font-size:1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow:3px 3px navy;
-    border-style:solid;
 }
 
 /* container item #2 holds clickables e.g. dog, cat, other */
 .box2{
     width:50%;
     text-align: center;
-    border-style:solid;
-    border-color:white;
     
 }
 
 /* container item #3 holds back button*/
 .box3{
-    text-align: center;
-    width:50%;
-    border-style:solid;
-    border-color:white;
 }
 
 /* unordered list for dog, cat, other */
@@ -108,8 +100,6 @@ body{
     margin-right:5%;
     width:auto;
     list-style-type: none;
-    border-style:solid;
-    border-color:pink;
     
 }
 

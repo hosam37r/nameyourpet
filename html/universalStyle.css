@@ -70,75 +70,85 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    
-    
+    border-style:solid;
 }
 
 /* container item #1 holds <h3> heading */
 .box1{
+    width:50%;
     text-align: center;
     color:white;
     font-weight: bold;
+    font-size:1.5vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow:3px 3px navy;
-    
+    border-style:solid;
 }
 
 /* container item #2 holds clickables e.g. dog, cat, other */
 .box2{
+    width:50%;
     text-align: center;
-    
+    border-style:solid;
+    border-color:white;
     
 }
 
 /* container item #3 holds back button*/
 .box3{
     text-align: center;
-    
+    width:50%;
+    border-style:solid;
+    border-color:white;
 }
 
 /* unordered list for dog, cat, other */
  #choices {
+    margin-left:5%;
+    margin-right:5%;
+    width:auto;
     list-style-type: none;
-    color:white;
-    text-align: center;
+    border-style:solid;
+    border-color:pink;
+    
 }
 
 /* each list item for dog, cat, other */
  #choices li{
-    width: 368px;
+    width:75%;
     margin-bottom:10px;
-    padding:5px;
+    padding:6px;
     text-align:center;
     border-style:solid;
     border-color:navy;
     border-radius: 4px;
-
+    
 }
 
 /* anchor dog, cat, other */
 #choices li a{
+    text-align: center;
+    width:auto;
     display:block;/*makes whole row with link clickable */
     text-decoration: none;
     color:white;
-    font-size:28px;
+    font-size:1.5vw;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow:3px 3px navy;
-    
-        
 }
 
 li:hover{
-    background-color: lightskyblue;
+    background-color: rgb(17, 121, 185);
 }
 #back{
+    text-align: center;
     background-color:navy;
     color:white;
-    font-size:28px;
+    font-size:1.75vw;
     font-weight: bold;
     border-radius:4px;
-    width: 200px;
+    width: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-shadow: 1px 1px black;
 }
@@ -147,16 +157,18 @@ li:hover{
     color:black;
 }
 #centerQuiz{
-    position:absolute;
-    left:17%;
-    top:15%;
+    margin-left:25%;/* work around to center the quiz box */
+    margin-right:25%;/* work around to center the quiz box */
+    margin-top:10%;
+    padding:10px;
     width:50%;
-    height:60%;
-    /*background-image:url('images/background.jpg');*/
-    background-color:rgb(171, 176, 194);
+    height:auto;/* adjust height as quiz height changes */
+    background-color:rgb(195, 201, 216);
     border-style: solid;
-    border-width: 1px;
+    
+    border-width: 2px;
     border-radius:5px;
     box-shadow: 10px 10px 5px navy;
+    
 }
 /********** END QUIZ STYLING **********/

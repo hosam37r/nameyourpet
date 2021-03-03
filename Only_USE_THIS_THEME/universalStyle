@@ -134,7 +134,7 @@ li:hover{
 }
 #centerQuiz{
     position:absolute;
-    left:17%;
+    left:27%;
     top:15%;
     width:50%;
     height:60%;

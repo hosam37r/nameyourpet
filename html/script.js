@@ -68,7 +68,7 @@
 				'dog_gender_neutral': {
 					name: 'Gender Neutral',
 					final: 'yes',
-					children: ['dog_gender_neutral1', 'dog_gender_neutral2', 'dog_gender_neutral3', 'dog_gender_neutral4', 'dog_gender_neutral5', 'dog_gender_neutral6', 'dog_gender_neutral7', 'dog_gender_neutral8', 'dog_gender_neutral9', 'dog_gender_neutral10', 'dog_gender_neutral11', 'dog_gender_neutral12']
+					children: ['dog_gender_neutral1', 'dog_gender_neutral2', 'dog_gender_neutral3', 'dog_gender_neutral4', 'dog_gender_neutral5', 'dog_gender_neutral6', 'dog_gender_neutral7', 'dog_gender_neutral8', 'dog_gender_neutral9', 'dog_gender_neutral10', 'dog_gender_neutral11', 'dog_gender_neutral12', 'dog_gender_neutral13']
 				},
 
 				/*
@@ -104,73 +104,73 @@
 				'dog_male_black': {
 					name: 'Black',
 					final: 'yes',
-					children: ['dog_male_black1', 'dog_male_black2', 'dog_male_black3', 'dog_male_black4', 'dog_male_black5']
+					children: ['dog_male_black1', 'dog_male_black2', 'dog_male_black3', 'dog_male_black4', 'dog_male_black5', 'dog_male_black6', 'dog_male_black7', 'dog_male_black8', 'dog_male_black9', 'dog_male_black10']
 				},
 
 				'dog_male_white': {
 					name: 'White',
 					final: 'yes',
-					children: ['dog_male_white1', 'dog_male_white2', 'dog_male_white3', 'dog_male_white4', 'dog_male_white5']
+					children: ['dog_male_white1', 'dog_male_white2', 'dog_male_white3', 'dog_male_white4', 'dog_male_white5', 'dog_male_white6', 'dog_male_white7', 'dog_male_white8', 'dog_male_white9', 'dog_male_white10']
 				},
 
 				'dog_male_brown': {
 					name: 'Brown',
 					final: 'yes',
-					children: ['dog_male_brown1', 'dog_male_brown2', 'dog_male_brown3', 'dog_male_brown4', 'dog_male_brown5']
+					children: ['dog_male_brown1', 'dog_male_brown2', 'dog_male_brown3', 'dog_male_brown4', 'dog_male_brown5', 'dog_male_brown6', 'dog_male_brown7', 'dog_male_brown8', 'dog_male_brown9', 'dog_male_brown10']
 				},
 
 				'dog_male_tan': {
 					name: 'Tan',
 					final: 'yes',
-					children: ['dog_male_tan1', 'dog_male_tan2', 'dog_male_tan3', 'dog_male_tan4', 'dog_male_tan5']
+					children: ['dog_male_tan1', 'dog_male_tan2', 'dog_male_tan3', 'dog_male_tan4', 'dog_male_tan5', 'dog_male_tan6', 'dog_male_tan7', 'dog_male_tan8', 'dog_male_tan9', 'dog_male_tan10']
 				},
 
 				'dog_male_brindle': {
 					name: 'Brindle',
 					final: 'yes',
-					children: ['dog_male_brindle1', 'dog_male_brindle2', 'dog_male_brindle3', 'dog_male_brindle4']
+					children: ['dog_male_brindle1', 'dog_male_brindle2', 'dog_male_brindle3', 'dog_male_brindle4', 'dog_male_brindle5', 'dog_male_brindle6', 'dog_male_brindle7', 'dog_male_brindle8', 'dog_male_brindle9', 'dog_male_brindle10']
 				},
 
 				'dog_male_gray': {
 					name: 'Gray',
 					final: 'yes',
-					children: ['dog_male_gray1', 'dog_male_gray2', 'dog_male_gray3', 'dog_male_gray4', 'dog_male_gray5']
+					children: ['dog_male_gray1', 'dog_male_gray2', 'dog_male_gray3', 'dog_male_gray4', 'dog_male_gray5', 'dog_male_gray6', 'dog_male_gray7', 'dog_male_gray8', 'dog_male_gray9', 'dog_male_gray10']
 				},
 
 				'dog_female_black': {
 					name: 'Black',
 					final: 'yes',
-					children: ['dog_female_black1', 'dog_female_black2', 'dog_female_black3', 'dog_female_black4', 'dog_female_black5']
+					children: ['dog_female_black1', 'dog_female_black2', 'dog_female_black3', 'dog_female_black4', 'dog_female_black5', 'dog_female_black6', 'dog_female_black7', 'dog_female_black8', 'dog_female_black9', 'dog_female_black10']
 				},
 
 				'dog_female_white': {
 					name: 'White',
 					final: 'yes',
-					children: ['dog_female_white1', 'dog_female_white2', 'dog_female_white3', 'dog_female_white4', 'dog_female_white5']
+					children: ['dog_female_white1', 'dog_female_white2', 'dog_female_white3', 'dog_female_white4', 'dog_female_white5', 'dog_female_white6', 'dog_female_white7', 'dog_female_white8', 'dog_female_white9', 'dog_female_white10']
 				},
 
 				'dog_female_brown': {
 					name: 'Brown',
 					final: 'yes',
-					children: ['dog_female_brown1', 'dog_female_brown2', 'dog_female_brown3', 'dog_female_brown4', 'dog_female_brown5']
+					children: ['dog_female_brown1', 'dog_female_brown2', 'dog_female_brown3', 'dog_female_brown4', 'dog_female_brown5', 'dog_female_brown6', 'dog_female_brown7', 'dog_female_brown8', 'dog_female_brown9', 'dog_female_brown10']
 				},
 
 				'dog_female_tan': {
 					name: 'Tan',
 					final: 'yes',
-					children: ['dog_female_tan1', 'dog_female_tan2', 'dog_female_tan3', 'dog_female_tan4', 'dog_female_tan5']
+					children: ['dog_female_tan1', 'dog_female_tan2', 'dog_female_tan3', 'dog_female_tan4', 'dog_female_tan5', 'dog_female_tan6', 'dog_female_tan7', 'dog_female_tan8', 'dog_female_tan9', 'dog_female_tan10']
 				},
 
 				'dog_female_brindle': {
 					name: 'Brindle',
 					final: 'yes',
-					children: ['dog_female_brindle1', 'dog_female_brindle2', 'dog_female_brindle3', 'dog_female_brindle4']
+					children: ['dog_female_brindle1', 'dog_female_brindle2', 'dog_female_brindle3', 'dog_female_brindle4', 'dog_female_brindle5', 'dog_female_brindle6', 'dog_female_brindle7', 'dog_female_brindle8', 'dog_female_brindle9', 'dog_female_brindle10']
 				},
 
 				'dog_female_gray': {
 					name: 'Gray',
 					final: 'yes',
-					children: ['dog_female_gray1', 'dog_female_gray2', 'dog_female_gray3', 'dog_female_gray4', 'dog_female_gray5']
+					children: ['dog_female_gray1', 'dog_female_gray2', 'dog_female_gray3', 'dog_female_gray4', 'dog_female_gray5', 'dog_female_gray6', 'dog_female_gray7', 'dog_female_gray8', 'dog_female_gray9', 'dog_female_gray10']
 				},
 
 				/*
@@ -185,7 +185,7 @@
 				'dog_male_unique': {
 					name: 'Unique',
 					final: 'yes',
-					children: ['dog_male_unique1', 'dog_male_unique2', 'dog_male_unique3', 'dog_male_unique4', 'dog_male_unique5']
+					children: ['dog_male_unique1', 'dog_male_unique2', 'dog_male_unique3', 'dog_male_unique4', 'dog_male_unique5', 'dog_male_unique6', 'dog_male_unique7', 'dog_male_unique8', 'dog_male_unique9', 'dog_male_unique10']
 				},
 
 				'dog_male_pun_ny': {
@@ -203,7 +203,7 @@
 				'dog_female_unique': {
 					name: 'Unique',
 					final: 'yes',
-					children: ['dog_female_unique1', 'dog_female_unique2', 'dog_female_unique3', 'dog_female_unique4', 'dog_female_unique5']
+					children: ['dog_female_unique1', 'dog_female_unique2', 'dog_female_unique3', 'dog_female_unique4', 'dog_female_unique5', 'dog_female_unique6', 'dog_female_unique7', 'dog_female_unique8', 'dog_female_unique9', 'dog_female_unique10']
 				},
 
 				'dog_female_pun_ny': {
@@ -220,30 +220,61 @@
 				'dog_male_black3': { name: 'Twilight' },
 				'dog_male_black4': { name: 'Jaguar' },
 				'dog_male_black5': { name: 'Midnight' },
+                'dog_male_black6': { name: 'Emery' },
+                'dog_male_black7': { name: 'Ash' },
+                'dog_male_black8': { name: 'Asher' },
+                'dog_male_black9': { name: 'Sirius' },
+                'dog_male_black10': { name: 'Sable' },
 				'dog_male_white1': { name: 'Blizzard' },
 				'dog_male_white2': { name: 'Moonbeam' },
 				'dog_male_white3': { name: 'Blanche' },
 				'dog_male_white4': { name: 'Glacier' },
 				'dog_male_white5': { name: 'Everest' },
+                'dog_male_white6': { name: 'Silver' },
+                'dog_male_white7': { name: 'Ice Cream' },
+                'dog_male_white8': { name: 'Chip' },
+                'dog_male_white9': { name: 'Dash' },
+                'dog_male_white10': { name: 'Flake' },
 				'dog_male_brown1': { name: 'Truffles' },
 				'dog_male_brown2': { name: 'Hershey' },
 				'dog_male_brown3': { name: 'Diablo' },
 				'dog_male_brown4': { name: 'Chocolate' },
 				'dog_male_brown5': { name: 'Charlie Brown' },
+                'dog_male_brown6': { name: 'Cinnamon' },
+                'dog_male_brown7': { name: 'Walnut' },
+                'dog_male_brown8': { name: 'Coffee' },
+                'dog_male_brown9': { name: 'Raisin' },
+                'dog_male_brown10': { name: 'Rusty' },
 				'dog_male_tan1': { name: 'S`mores' },
 				'dog_male_tan2': { name: 'Muffin' },
 				'dog_male_tan3': { name: 'Nutmeg' },
 				'dog_male_tan4': { name: 'Biscuit' },
-				'dog_male_tan5': { name: 'Sunbeam' },
+				'dog_male_tan5': { name: 'Prarie' },
+                'dog_male_tan6': { name: 'Sunbeam' },
+                'dog_male_tan7': { name: 'Lemon' },
+                'dog_male_tan8': { name: 'Barley' },
+                'dog_male_tan9': { name: 'Autumn' },
+                'dog_male_tan10': { name: 'Cheddar' },
 				'dog_male_brindle1': { name: 'Swatch' },
 				'dog_male_brindle2': { name: 'Tigger' },
 				'dog_male_brindle3': { name: 'Pyro' },
 				'dog_male_brindle4': { name: 'Eclipse' },
+                'dog_male_brindle5': { name: 'Tire' },
+                'dog_male_brindle6': { name: 'Lava' },
+                'dog_male_brindle7': { name: 'Mallow' },
+                'dog_male_brindle8': { name: 'Campfire' },
+                'dog_male_brindle9': { name: 'Magma' },
+                'dog_male_brindle10': { name: 'Obsidian' },
 				'dog_male_gray1': { name: 'Charcoal' },
 				'dog_male_gray2': { name: 'Slate' },
 				'dog_male_gray3': { name: 'Merlin' },
 				'dog_male_gray4': { name: 'Phantom' },
 				'dog_male_gray5': { name: 'Moonshine' },
+                'dog_male_gray6': { name: 'Moon' },
+                'dog_male_gray7': { name: 'Bolt' },
+                'dog_male_gray8': { name: 'Link' },
+                'dog_male_gray9': { name: 'Iroh' },
+                'dog_male_gray10': { name: 'Dusty' },
 
 				/*
 				* Female Dog Names - Color Specific
@@ -258,25 +289,51 @@
 				'dog_female_white3': { name: 'Brie' },
 				'dog_female_white4': { name: 'Champagne' },
 				'dog_female_white5': { name: 'Cloud' },
+                'dog_female_white6': { name: 'Lily' },
+                'dog_female_white7': { name: 'Moby' },
+                'dog_female_white8': { name: 'Dewdrop' },
+                'dog_female_white9': { name: 'Blizzy' },
+                'dog_female_white10': { name: '' },
 				'dog_female_brown1': { name: 'Cadbury' },
 				'dog_female_brown2': { name: 'Godiva' },
 				'dog_female_brown3': { name: 'Whiskey' },
 				'dog_female_brown4': { name: 'Ebony' },
 				'dog_female_brown5': { name: 'Nutella' },
+                'dog_female_brown6': { name: 'Mocha' },
+                'dog_female_brown7': { name: 'Manilla' },
+                'dog_female_brown8': { name: 'Sepia' },
+                'dog_female_brown9': { name: 'Ziv' },
+                'dog_female_brown10': { name: 'Stella' },
 				'dog_female_tan1': { name: 'Cinnamon' },
 				'dog_female_tan2': { name: 'Sienna' },
 				'dog_female_tan3': { name: 'Butterscotch' },
 				'dog_female_tan4': { name: 'Maple' },
 				'dog_female_tan5': { name: 'Apricot' },
+                'dog_female_tan6': { name: 'Beau' },
+                'dog_female_tan7': { name: 'Shea' },
+                'dog_female_tan8': { name: 'Siv' },
+                'dog_female_tan9': { name: 'Fizzy' },
+                'dog_female_tan10': { name: 'Sunshine' },
 				'dog_female_brindle1': { name: 'Mimosa' },
 				'dog_female_brindle2': { name: 'Flame' },
 				'dog_female_brindle3': { name: 'Ember' },
 				'dog_female_brindle4': { name: 'Sunkist' },
+                'dog_female_brindle5': { name: 'Swirl' },
+                'dog_female_brindle6': { name: 'Strawberry' },
+                'dog_female_brindle7': { name: 'Caramel' },
+                'dog_female_brindle8': { name: 'Drizzle' },
+                'dog_female_brindle9': { name: 'Amber' },
+                'dog_female_brindle10': { name: 'Honey' },
 				'dog_female_gray1': { name: 'Echo' },
 				'dog_female_gray2': { name: 'Stardust' },
 				'dog_female_gray3': { name: 'Luna' },
 				'dog_female_gray4': { name: 'Stormy' },
 				'dog_female_gray5': { name: 'Jupiter' },
+                'dog_female_gray6': { name: 'Europa' },
+                'dog_female_gray7': { name: 'Eurydice' },
+                'dog_female_gray8': { name: 'Comet' },
+                'dog_female_gray9': { name: 'Floe' },
+                'dog_female_gray10': { name: 'Mae' },
 
 				/*
 				* Male Dog Names - Name Category
@@ -296,6 +353,11 @@
 				'dog_male_unique3': { name: 'Kobe' },
 				'dog_male_unique4': { name: 'Loki' },
 				'dog_male_unique5': { name: 'Odin' },
+                'dog_male_unique6': { name: 'Sharik' },
+                'dog_male_unique7': { name: 'Captain' },
+                'dog_male_unique8': { name: 'Dango' },
+                'dog_male_unique9': { name: 'Spiff' },
+                'dog_male_unique10': { name: 'Lorn' },
 				'dog_male_pun_ny1': { name: 'Chewbarka' },
 				'dog_male_pun_ny2': { name: 'Pawcasso' },
 				'dog_male_pun_ny3': { name: 'Pablo Escobark' },
@@ -325,6 +387,11 @@
 				'dog_female_unique3': { name: 'Marlo' },
 				'dog_female_unique4': { name: 'Raine' },
 				'dog_female_unique5': { name: 'Nutella' },
+                'dog_female_unique6': { name: 'Marigold' },
+                'dog_female_unique7': { name: 'Lorraine' },
+                'dog_female_unique8': { name: 'Mochi' },
+                'dog_female_unique9': { name: 'Cookie' },
+                'dog_female_unique10': { name: 'Avalon' },
 				'dog_female_pun_ny1': { name: 'Mary Puppins' },
 				'dog_female_pun_ny2': { name: 'Virginia Woof' },
 				'dog_female_pun_ny3': { name: 'Queen Elizabark' },
@@ -351,6 +418,8 @@
 				'dog_gender_neutral10': { name: 'Espresso' },
 				'dog_gender_neutral11': { name: 'Hershey' },
 				'dog_gender_neutral12': { name: 'Frosty' },
+                'dog_gender_neutral13': { name: 'Lavender' },
+                
 
 				/*
 				* Cats - Gender

@@ -30,6 +30,7 @@
     
     <!-- Page Heading Here -->
     
+    <!-- Dogs -->
     <div class= "dog_male">
     <div class="option_list_male">
         <div class="option_male">
@@ -55,8 +56,142 @@
         </div>
         </div>
         </div>
+    <!-- Cats -->   
+    <div class= "cat_male">
+    <div class="option_list_male">
+        <div class="option_male">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Cats</h2></span>
+            <p>Male Names: </p>
+            <li>Winston</li>
+            <li>Leo</li>
+            <li>Milo</li>
+            <li>Shadow</li>
+            <li>Oliver</li>
+        </div>
+    </div> 
     </div>
-    
+    <div class= "cat_female">
+    <div class="option_list_female">
+        <div class="option_female">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Cats</h2></span>
+            <p>Female Names: </p>
+            <li>Cleo</li>
+            <li>Missy</li>
+            <li>Shadow</li>
+            <li>Minnie</li>
+            <li>Bella</li>
+        </div>
+    </div>
+    </div>
+    <!-- Snake -->   
+    <div class= "snake_male">
+    <div class="option_list_male">
+        <div class="option_male">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Snake</h2></span>
+            <p>Male Names: </p>
+            <li>Noodles</li>
+            <li>Slinky</li>
+            <li>Buttercup</li>
+            <li>Diablo</li>
+            <li>Jafaar</li>
+        </div>
+    </div>
+    </div>
+    <div class= "snake_female">
+    <div class="option_list_female">
+        <div class="option_female">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Snake</h2></span>
+            <p>Female Names: </p>
+            <li>Medusa</li>
+            <li>Juniper</li>
+            <li>Cherry</li>
+            <li>Bindi</li>
+            <li>Severus</li>
+        </div>
+    </div>
+    </div>
+    <!--Bunny -->   
+    <div class= "bunny_male">
+    <div class="option_list_male">
+        <div class="option_male">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Bunny</h2></span>
+            <p>Male Names: </p>
+            <li>Thumper</li>
+            <li>Oreo</li>
+            <li>Whiskers</li>
+            <li>Drax</li>
+            <li>Midnight</li>
+        </div>
+    </div>
+    </div>
+    <div class= "bunny_female">
+    <div class="option_list_female">
+        <div class="option_female">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Bunny</h2></span>
+            <p>Female Names: </p>
+            <li>Snowball</li>
+            <li>Rose</li>
+            <li>Luna</li>
+            <li>Gretta</li>
+            <li>Binky</li>
+        </div>
+    </div>
+    </div>
+    <!-- Fish -->   
+    <div class= "fish_male">
+    <div class="option_list_male">
+        <div class="option_male">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Fish</h2></span>
+            <p>Male Names: </p>
+            <li>Nemo</li>
+            <li>Apollo</li>
+            <li>Bubbles</li>
+            <li>Pickle</li>
+            <li>Captain</li>
+        </div>
+    </div>
+    </div>
+    <div class= "fish_female">
+    <div class="option_list_female">
+        <div class="option_female">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Fish</h2></span>
+            <p>Female Names: </p>
+            <li>Dori</li>
+            <li>Coral</li>
+            <li>Penny</li>
+            <li>Goldie</li>
+            <li>Jewel</li>
+        </div>
+    </div>
+    </div>
+        <!-- Bird -->   
+    <div class= "bird_male">
+    <div class="option_list_male">
+        <div class="option_male">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Bird</h2></span>
+            <p>Male Names: </p>
+            <li>Mojo</li>
+            <li>Rico</li>
+            <li>Sky</li>
+            <li>Jay</li>
+            <li>Oscar</li>
+        </div>
+    </div> 
+    </div>
+    <div class= "bird_female">
+    <div class="option_list_female">
+        <div class="option_female">
+            <span><h2 style=" font-family: 'Pacifico', cursive;">Bird</h2></span>
+            <p>Female Names: </p>
+            <li>Tweetie</li>
+            <li>Kiwi</li>
+            <li>Tiki</li>
+            <li>Luna</li>
+            <li>Skye</li>
+        </div>
+    </div>
+    </div>
+    </div>
     
     
     
@@ -127,7 +262,7 @@
         border-style: solid;
         
     }
-    .dog {
+    .dog, .cat, .snake, .bunny, .fish, .bird {
        position:absolute;
        margin:0; 
        margin-top:0; 

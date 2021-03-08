@@ -204,7 +204,6 @@ li:hover{
 #centerQuiz{
     margin-left:25%;/* work around to center the quiz box */
     margin-right:25%;/* work around to center the quiz box */
-    margin-top:10%;
     padding:10px;
     width:50%;
     height:auto;/* adjust height as quiz height changes */

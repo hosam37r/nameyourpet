@@ -1,341 +1,376 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html>
 <head>
-    <!-- Fonts -->
+
+<!-- Fonts -->
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
+
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
 <!-- cssPage -->
+
 <link rel="stylesheet" href="universalStyle.css">
 
-</head>   
-<body>
-    
-<div style = "position:fixed;top:0%;height:6%;left:0%;width:99.8%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- Header  -->
+<!-- All the images should be put into a seperate folder labelled "images" -->
 
-    <img src = "../Only_USE_THIS_THEME/doggoWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
-    <a href = "index.php"><button class = "headerBut">Home</button></a> <!-- fill in your url to the page -->
-    <img src = "../Only_USE_THIS_THEME/kittyWEBKIT.jpg" style = "position:relative;float:left;width:5%;height:100%;">
-    <a href = "contactUs.php"><button class = "headerBut">Contact Us</button></a> <!-- fill in your url to the page -->
-    <img src = "../Only_USE_THIS_THEME/iguanaWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
-    <a href = "TrendingPetNames.php"><button class = "headerBut">Trending</button></a> <!-- fill in your url to the page -->
-    <img src = "../Only_USE_THIS_THEME/fishWEBKIT.png" style = "position:relative;float:left;width:5%;height:100%;">
-</div>
-<div id = "center">
-    <h2 id = "centerPageHeader">Trending Pet Names in 2021</h2>  
-    
-    <!-- Page Heading Here -->
-    
-    <!-- Dogs -->
-    <div class= "dog_male">
-    <div class="option_list_male">
-        <div class="option_male">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Dogs</h2></span>
-            <p>Male Names: </p>
-            <li>Tucker</li>
-            <li>Dakota</li>
-            <li>Jake</li>
-            <li>Bobbie</li>
-            <li>Pickle</li>
-        </div>
-    <div class="dog_female">
-    <div class="option_list_female">
-        <div class="option_female">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Dogs</h2></span>
-            <p>Female Names: </p>
-            <li>Ripley</li>
-            <li>Gia</li>
-            <li>Bailey</li>
-            <li>Lola</li>
-            <li>Georgia</li>
-        </div>
-        </div>
-        </div>
-        </div>
-    <!-- Cats -->   
-    <div class= "cat_male">
-    <div class="option_list_male">
-        <div class="option_male">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Cats</h2></span>
-            <p>Male Names: </p>
-            <li>Winston</li>
-            <li>Leo</li>
-            <li>Milo</li>
-            <li>Shadow</li>
-            <li>Oliver</li>
-        </div>
-    </div> 
-    </div>
-    <div class= "cat_female">
-    <div class="option_list_female">
-        <div class="option_female">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Cats</h2></span>
-            <p>Female Names: </p>
-            <li>Cleo</li>
-            <li>Missy</li>
-            <li>Shadow</li>
-            <li>Minnie</li>
-            <li>Bella</li>
-        </div>
-    </div>
-    </div>
-    <!-- Snake -->   
-    <div class= "snake_male">
-    <div class="option_list_male">
-        <div class="option_male">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Snake</h2></span>
-            <p>Male Names: </p>
-            <li>Noodles</li>
-            <li>Slinky</li>
-            <li>Buttercup</li>
-            <li>Diablo</li>
-            <li>Jafaar</li>
-        </div>
-    </div>
-    </div>
-    <div class= "snake_female">
-    <div class="option_list_female">
-        <div class="option_female">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Snake</h2></span>
-            <p>Female Names: </p>
-            <li>Medusa</li>
-            <li>Juniper</li>
-            <li>Cherry</li>
-            <li>Bindi</li>
-            <li>Severus</li>
-        </div>
-    </div>
-    </div>
-    <!--Bunny -->   
-    <div class= "bunny_male">
-    <div class="option_list_male">
-        <div class="option_male">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Bunny</h2></span>
-            <p>Male Names: </p>
-            <li>Thumper</li>
-            <li>Oreo</li>
-            <li>Whiskers</li>
-            <li>Drax</li>
-            <li>Midnight</li>
-        </div>
-    </div>
-    </div>
-    <div class= "bunny_female">
-    <div class="option_list_female">
-        <div class="option_female">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Bunny</h2></span>
-            <p>Female Names: </p>
-            <li>Snowball</li>
-            <li>Rose</li>
-            <li>Luna</li>
-            <li>Gretta</li>
-            <li>Binky</li>
-        </div>
-    </div>
-    </div>
-    <!-- Fish -->   
-    <div class= "fish_male">
-    <div class="option_list_male">
-        <div class="option_male">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Fish</h2></span>
-            <p>Male Names: </p>
-            <li>Nemo</li>
-            <li>Apollo</li>
-            <li>Bubbles</li>
-            <li>Pickle</li>
-            <li>Captain</li>
-        </div>
-    </div>
-    </div>
-    <div class= "fish_female">
-    <div class="option_list_female">
-        <div class="option_female">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Fish</h2></span>
-            <p>Female Names: </p>
-            <li>Dori</li>
-            <li>Coral</li>
-            <li>Penny</li>
-            <li>Goldie</li>
-            <li>Jewel</li>
-        </div>
-    </div>
-    </div>
-        <!-- Bird -->   
-    <div class= "bird_male">
-    <div class="option_list_male">
-        <div class="option_male">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Bird</h2></span>
-            <p>Male Names: </p>
-            <li>Mojo</li>
-            <li>Rico</li>
-            <li>Sky</li>
-            <li>Jay</li>
-            <li>Oscar</li>
-        </div>
-    </div> 
-    </div>
-    <div class= "bird_female">
-    <div class="option_list_female">
-        <div class="option_female">
-            <span><h2 style=" font-family: 'Pacifico', cursive;">Bird</h2></span>
-            <p>Female Names: </p>
-            <li>Tweetie</li>
-            <li>Kiwi</li>
-            <li>Tiki</li>
-            <li>Luna</li>
-            <li>Skye</li>
-        </div>
-    </div>
-    </div>
-    </div>
-    
-    
-    
-<!-- 
-    <td>Cat</td>
-      <td class="blue"><li>Winston</li><li>Leo</li><li>Milo</li><li>Shadow</li><li>Oliver</li></td>
-      
-      <td class="pink"><li>Cleo</li><li>Missy</li><li>Shadow</li><li>Minnie</li><li>Bella</li></td>
-  </tr>
-  <tr>
-      <td>Snake</td>
-    <td class="blue"><li>Noodles</li><li>Slinky</li><li>Buttercup</li><li>Diablo</li><li>Jafaar</li></td>
-    
-    <td class="pink"><li>Medusa</li><li>Juniper</li><li>Cherry</li><li>Bindi</li><li>Severus</li></td>
-  </tr>
-  <tr>
-      <td>Bunny</td>
-    <td class="blue"><li>Thumper</li><li>Oreo</li><li>Whiskers</li><li>Drax</li><li>Midnight</li></td>
-    
-    <td class="pink"><li>Snowball</li><li>Rose</li><li>Luna</li><li>Gretta</li><li>Binky</li></td>
- 
-  </tr>
-  <tr>
-    <td>Fish</td>
-      <td class="blue"><li>Nemo</li><li>Apollo</li><li>Bubbles</li><li>Pickle</li><li>Captain</li></td>
-      
-      <td class="pink"><li>Dori</li><li>Coral</li><li>Penny</li><li>Goldie</li><li>Jewel</li></td>
-   
-  </tr>
-  <tr>
-    <td>Bird</td>
-    <td class="blue"><li>Mojo</li><li>Rico</li><li>Sky</li><li>Jay</li><li>Oscar</li></td>
-    
-    <td class="pink"><li>Tweetie</li><li>Kiwi</li><li>Tiki</li><li>Luna</li><li>Skye</li></td>
-  </tr>
-</table>
-    
-<!-- can put main stuff here, make div larger by editing universal style the id called centerPageHeader  -->
-</div>
-<style> 
-    h2 {
-        text-align: center;
-        font-size: 35px;
-       
-    }
-    
-    #center{
-        position:fixed;
-        left:5%;
-        height: 100%;
-        margin-left: 0;
-        margin-right; 0;
-        font-size:1.5em;
-        
-        <!-- width: 100%; -->
-       
-    }
- 
-    .backgroundImage {
-        background-image: url(doggo.jpeg);
-        background-repeat: no-repeat;
-        background-size: 100% 100%;
-        background-attachment: fixed;
-        background-position: center;
-    }
-    
-    .top {
-        border-style: solid;
-        
-    }
-    .dog, .cat, .snake, .bunny, .fish, .bird {
-       position:absolute;
-       margin:0; 
-       margin-top:0; 
-       margin-left:30px;
-       font-size: 0.8em;
-    }
-    
-    .option_list_male .option_male {
-    background: aliceblue;
-    border: 1px solid #84c5fe;
-    border-radius: 5px;
-    padding: 8px 15px;
-    margin-bottom: 15px;
-    font-size: 17px;
-    justify-content: space-between;
-    margin-left: 30px;
-    margin-top: 10px;
-    font-family: 'Pacifico', cursive; 
-    }
-    
-    .option_list_female .option_female {
-    background: lavenderblush;
-    border: 1px solid #ff69b4;
-    border-radius: 5px;
-    padding: 8px 15px;
-    margin-bottom: 15px;
-    font-size: 17px;
-    justify-content: space-between;
-    margin-left: 30px;
-    margin-top: 10px;
-    font-family: 'Pacifico', cursive; 
-    }
-    
-    li{
-        list-style-type: circle;
-    }
-    
-    .option_list_male, option_list_female {
-        padding: 5px;
-        margin: 5px;
-        display: flex;
-        float: left;
-    }
-   
+
+<style>
+
 </style>
-<script>
-function openNav() {
-  document.getElementById("mySidenav").style.width = "250px";
-}
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-}
-</script>
-<div class="backgroundImage">
-<br>
-<br>
-<br>
-<br>
-</div>
-<div id="mySidenav" class="sidenav"><!-- Side Nav  -->
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  </div>
-  
-<div style = "position:fixed;left:0%;bottom:0%;width:100%;height:15%;background-color:rgb(214, 214, 214);border:solid 1px blue;"><!-- footer  -->
-        <h3 style = "position:absolute;left:5%;top:2%;">We are committed to naming pets</h3>
-        <p style = "position:absolute;left:5%;top:26%;width:15%;">Feel free to take our quiz and use the results to name your awesome pet.  Leave us some feedback about how great our web site is!<p> 
-        <a href = "https://www.facebook.com"> <img src = "../Only_USE_THIS_THEME/fb.jpg" style = "position:absolute;left:41%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.instagram.com"> <img src = "../Only_USE_THIS_THEME/ig.jpg" style = "position:absolute;left:45%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.pinterest.com"> <img src = "../Only_USE_THIS_THEME/pn.jpg" style = "position:absolute;left:49%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.reddit.com"> <img src = "../Only_USE_THIS_THEME/rd.jpg" style = "position:absolute;left:53%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.tiktok.com"> <img src = "../Only_USE_THIS_THEME/tt.jpg" style = "position:absolute;left:57%;top:20%;width:2%;height:20%;"></a>
-        <a href = "https://www.twitter.com"> <img src = "../Only_USE_THIS_THEME/tw.jpg" style = "position:absolute;left:61%;top:20%;width:2%;height:20%;"></a>
-        <h3 style = "position:absolute;left:50%;bottom:20%;">Share Us!</h3>
+
+</head>
+
+<body>
+
+<!--Header/navbar-->
+
+    <div class="navbarMain">
+
+        <div class="navbarDog"><img src = "images/doggoWEBKIT.png" ></div>
+
+        <div class="navbarIndex"><a href = "Index.html">Home</a> <!-- fill in your url to the page --></div>
+
+        <div class="navbarCat"><img src = "images/kittyWEBKIT.jpg" ></div>
+
+        <div class="navbarResources"><a href = "resources.html">Resources</a> <!-- fill in your url to the page --></div>
+
+        <div class="navbarIguana"><img src = "images/iguanaWEBKIT.png"></div>
+
+        <div class="navbarTrending"><a href = "TrendingPetNames.html">Trending</a> <!-- fill in your url to the page --></div>
+
+        <div class="navbarFish"><img src = "images/fishWEBKIT.png" ></div>
+
+        <div class="navbarContact"><a href = "ContactUs.html">Contact Us</a> <!-- fill in your url to the page --></div>
+
     </div>
+    
+    <!--END Header/navbar-->
+
+  <!--CONTENT--> 
+
+<div id="trendingContent">
+
+    <h2>Trending Pet Names for 2021!</h2>
+
+<table style="width:100%"> <!--START TRENDING TABLE-->
+
+  <tr>
+
+    <th id="female">Female</th>
+
+    <th id="male">Male</th>
+
+  </tr>
+
+    <!--dogs-->
+
+  <tr>
+
+    <td id="female"style="font-weight: bold;">Dog</td>
+
+    <td id="male"style="font-weight: bold;">Dog</td>
+
+  </tr>
+
+  <tr>
+
+    <td id="female">
+
+            <ul>Ripley</ul>
+
+            <ul>Gia</ul>
+
+            <ul>Bailey</ul>
+
+            <ul>Lola</ul>
+
+            <ul>Georgia</ul>
+
+        </td>
+
+    <td id="male">
+
+            <ul>Tucker</ul>
+
+            <ul>Dakota</ul>
+
+            <ul>Jake</ul>
+
+            <ul>Bobbie</ul>
+
+            <ul>Pickle</ul>
+
+      </td>
+
+  </tr>
+    
+    <!--cats-->
+
+    <tr>
+
+    <td id="female"style="font-weight: bold;">Cat</td>
+
+    <td id="male"style="font-weight: bold;">Cat</td>
+
+  </tr>
+
+  <tr>
+
+    <td id="female">
+
+            <ul>Maddie</ul>
+
+            <ul>Cleo</ul>
+
+            <ul>Missy</ul>
+
+            <ul>Lulu</ul>
+
+            <ul>Shadow</ul>
+
+        </td>
+
+    <td id="male">
+
+            <ul>Mylo</ul>
+
+            <ul>Leo</ul>
+
+            <ul>Simba</ul>
+
+            <ul>Pepper</ul>
+
+            <ul>Mittens</ul>
+
+      </td>
+
+  </tr>
+    
+    <!--Snakes-->
+
+    <tr>
+
+    <td id="female"style="font-weight: bold;">Snake</td>
+
+    <td id="male"style="font-weight: bold;">Snake</td>
+
+  </tr>
+
+  <tr>
+
+    <td id="female">
+
+            <ul>Medusa</ul>
+
+            <ul>Severus</ul>
+
+            <ul>Bindi</ul>
+
+            <ul>Juniper</ul>
+
+            <ul>Cherry</ul>
+
+        </td>
+
+    <td id="male">
+
+            <ul>Diablo</ul>
+
+            <ul>Noodles</ul>
+
+            <ul>Slinky</ul>
+
+            <ul>Fluffy</ul>
+
+            <ul>x=Hydra</ul>
+
+      </td>
+
+  </tr>
+    
+    <!--Bunny-->
+
+    <tr>
+
+    <td id="female"style="font-weight: bold;">Bunny</td>
+
+    <td id="male"style="font-weight: bold;">Bunny</td>
+
+  </tr>
+
+  <tr>
+
+    <td id="female">
+
+            <ul>Gretta</ul>
+
+            <ul>Rose</ul>
+
+            <ul>Luna</ul>
+
+            <ul>Daisy</ul>
+
+            <ul>Buttons</ul>
+
+        </td>
+
+    <td id="male">
+
+            <ul>Thumper</ul>
+
+            <ul>Drax</ul>
+
+            <ul>Midnight</ul>
+
+            <ul>Whiskers</ul>
+
+            <ul>Bunn Bunn</ul>
+
+      </td>
+
+  </tr>
+    
+    <!--Fish-->
+
+    <tr>
+
+    <td id="female"style="font-weight: bold;">Fish</td>
+
+    <td id="male"style="font-weight: bold;">Fish</td>
+
+  </tr>
+
+  <tr>
+
+    <td id="female">
+
+            <ul>Dory</ul>
+
+            <ul>Goldie</ul>
+
+            <ul>Jewel</ul>
+
+            <ul>Coral</ul>
+
+            <ul>Crystal</ul>
+
+        </td>
+
+    <td id="male">
+
+            <ul>Nemo</ul>
+
+            <ul>Apollo</ul>
+
+            <ul>Bubbles</ul>
+
+            <ul>Captain</ul>
+
+            <ul>Moby</ul>
+
+      </td>
+
+  </tr>
+    
+    <!--Bird-->
+
+    <tr>
+
+    <td id="female"style="font-weight: bold;">Bird</td>
+
+    <td id="male"style="font-weight: bold;">Bird</td>
+
+  </tr>
+
+  <tr>
+
+    <td id="female">
+
+            <ul>Tweetie</ul>
+
+            <ul>Luna</ul>
+
+            <ul>Birdie</ul>
+
+            <ul>Kiwi</ul>
+
+            <ul>Tiki</ul>
+
+        </td>
+
+    <td id="male">
+
+            <ul>Mojo</ul>
+
+            <ul>Rico</ul>
+
+            <ul>Shadow</ul>
+
+            <ul>Jett</ul>
+
+            <ul>Oscar</ul>
+
+      </td>
+
+  </tr>
+
+</table> <!--END TABLE-->
+
+</div>
+
+    <!--END CONTENT-->
+
+    <!--Footer that is 3 boxes on top and 3 boxes on bottom in order 1, 2, 3. Some not used.-->
+
+<div class="footerMain">
+
+    <div class="footerTop1"><h3 >We are committed to naming pets</h3>
+
+        <p >Feel free to take our quiz and use the results to name your awesome pet.  Leave us some feedback about how great our web site is!<p></p>
+
+    </div>
+
+    <div class="footerTop2">
+
+        <a href = "https://www.facebook.com"> <img src = "images/fb.jpg" ></a>
+
+    <a href = "https://www.instagram.com"> <img src = "images/ig.jpg"></a>
+
+    <a href = "https://www.pinterest.com"> <img src = "images/pn.jpg" ></a>
+
+    <a href = "https://www.reddit.com"> <img src = "images/rd.jpg" ></a>
+
+    <a href = "https://www.tiktok.com"> <img src = "images/tt.jpg" ></a>
+
+    <a href = "https://www.twitter.com"> <img src = "images/tw.jpg" ></a>
+
+    </div>
+
+    <div class="footerTop3"></div><!--Placeholder for top right side of footer-->
+
+    <div class="footerBottom1"> </div><!--Placeholder for bottom left side of footer-->
+
+    <div class="footerBottom2"><h3 >Share Us!</h3></div>
+
+    <div class="footerBottom3"></div><!--Placeholder for bottom right side of footer-->
+
+</div>
+
+    <!--END footer-->
+
+<script>
+    
+</script>
+
 </body>
+
 </html>
+
+ 
+/********END TRENDING PET CONTENT ********/

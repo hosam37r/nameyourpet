@@ -60,7 +60,7 @@
     <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFour" class = "hidden">
     <img src = "images/bluestar.png" style = "height:5%;width:10%;cursor:pointer;" id = "hiddenStarFive" class = "hidden">
     <br>
-    <button class = "button" style = "">Submit</button>
+    <button class = "button" style = "" onclick = "submitFeedbacks()" Submit>Submit</button>
 </div>
   
 <div class="footerMain">
@@ -140,6 +140,19 @@ function submitFour(){
 function submitFive(){
     submitFour();
     document.getElementById("hiddenStarFive").classList.remove("hidden");
+}
+function submitFeedbacks(){
+    var fname = document.getElementById("fname").value;
+    var email = document.getElementById("email").value;
+    var phone = document.getElementById("phone").value;
+    var response = document.getElementById("texts").value;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        }
+    };
+    xmlhttp.open("GET","addFeedback.php?fname="+fname+"&email="+email+"&phone="+phone+"&response="+response,true);
+    xmlhttp.send();
 }
 </script>
 

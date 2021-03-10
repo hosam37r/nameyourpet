@@ -153,6 +153,11 @@ function submitFeedbacks(){
     };
     xmlhttp.open("GET","addFeedback.php?fname="+fname+"&email="+email+"&phone="+phone+"&response="+response,true);
     xmlhttp.send();
+    document.getElementById("fname").value = " ";
+    document.getElementById("email").value = " ";
+    document.getElementById("phone").value = " ";
+    document.getElementById("texts").value = " ";
+    alert("Thank you for your feedback, we will get back to you when we feel like it!");
 }
 </script>
 

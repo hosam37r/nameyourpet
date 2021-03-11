@@ -188,7 +188,7 @@
 
             <ul>Fluffy</ul>
 
-            <ul>x=Hydra</ul>
+            <ul>Hydra</ul>
 
       </td>
 

@@ -347,3 +347,32 @@ html{
         text-align: center;
     }
 /******** END FLEXBOX FOOTER ********/
+
+
+
+/********TRENDING PET CONTENT ********/
+
+#trendingContent {
+    background-color: rgba(214,214,214,0.95);
+    text-align-last: center;
+    padding: 20px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-size: 20px;
+    font-family: 'Pacifico', cursive;
+}
+
+#female {
+    padding: 10px;
+    background-color: pink;
+    font-family: 'Pacifico', cursive;
+}
+
+#male {
+    padding: 10px;
+    background-color: skyblue;
+    font-family: 'Pacifico', cursive;
+}
+
+/********END TRENDING PET CONTENT ********/

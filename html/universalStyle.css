@@ -167,6 +167,11 @@ body{
     border-style:solid;
     border-color:navy;
     border-radius: 4px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow:3px 3px navy;
+    font-size:1.5vw;
+    font-weight: bold;
+    color: white;
     
 }
 

@@ -995,6 +995,7 @@
 				current_id = null;
 
 				$backButton.css("display", "none");
+				$newnameButton.css("display","none");
 
 				renderList(initData);
 			};

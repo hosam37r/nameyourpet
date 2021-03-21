@@ -36,44 +36,45 @@
     </div>
     
 <div style=" text-align: center;">
-    
+    <br>
+    <h1 style="text-shadow: 1px 1px  white; font-size:3em;">Adoption, Shelter, and Other Pet Resources</h1>
     
 <div class="resourceContainer">
-    <div class="resourceName"><p>ASPCA</p></div>
-    <div class="resourceSummary"><p>The American Society for the Prevention of Cruelty to Animals® (ASPCA®) was the first humane society to be established in North America and is, today, one of the largest in the world.
+    <div class="resourceName"><h3>Name</h3><p>ASPCA</p></div>
+    <div class="resourceSummary"><h3>Mission</h3><p>The American Society for the Prevention of Cruelty to Animals® (ASPCA®) was the first humane society to be established in North America and is, today, one of the largest in the world.
         Our organization was founded on the belief that animals are entitled to kind and respectful treatment at the hands of humans and must be protected under the law. Headquartered in New York City, the ASPCA maintains a strong local presence, and with programs that extend our anti-cruelty mission across the country, we are recognized as a national animal welfare organization. We are a privately funded 501(c)(3) not-for-profit corporation, and are proud to boast more than 2 million supporters across the country.
         The ASPCA’s mission, as stated by founder Henry Bergh in 1866, is “to provide effective means for the prevention of cruelty to animals throughout the United States.”</p></div>
-    <div class="resourceLocation"><p>New York, NY</p></div>
-    <div class="resourceSite"><p><a href="https://www.aspca.org">ASPCA Website</a></p></div>
+    <div class="resourceLocation"><h3>Location</h3><p>New York, NY</p></div>
+    <div class="resourceSite"><h3>Website</h3><p><a href="https://www.aspca.org">ASPCA Website</a></p></div>
 </div>
 <div class="resourceContainer">
-    <div class="resourceName"><p>The Shelter Pet Project</p></div>
-    <div class="resourceSummary"><p>The Shelter Pet Project is the result of a collaborative effort between two leading animal welfare groups, the Humane Society of the United States and Maddie’s Fund, and the leading producer of public service advertising (PSA) campaigns, The Ad Council.
+    <div class="resourceName"><h3>Name</h3><p>The Shelter Pet Project</p></div>
+    <div class="resourceSummary"><h3>Mission</h3><p>The Shelter Pet Project is the result of a collaborative effort between two leading animal welfare groups, the Humane Society of the United States and Maddie’s Fund, and the leading producer of public service advertising (PSA) campaigns, The Ad Council.
         Our goal is to make shelters the first place potential adopters turn when looking to get a new pet, ensuring that all healthy and treatable pets find loving homes. We do this by breaking down misconceptions surrounding shelter pets and celebrating the unique bond between every shelter pet and parent.</p></div>
-    <div class="resourceLocation"><p>Online Presence Only</p></div>
-    <div class="resourceSite"><p><a href="https://www.theshelterpetproject.org">The Shelter Pet Project</a></p></div>
+    <div class="resourceLocation"><h3>Location</h3><p>Online Presence Only</p></div>
+    <div class="resourceSite"><h3>Website</h3><p><a href="https://www.theshelterpetproject.org">The Shelter Pet Project</a></p></div>
 </div>
 <div class="resourceContainer">
-    <div class="resourceName"><p>The Humane Society</p></div>
-    <div class="resourceSummary"><p>We fight the big fights to end suffering for all animals.
+    <div class="resourceName"><h3>Name</h3><p>The Humane Society</p></div>
+    <div class="resourceSummary"><h3>Mission</h3><p>We fight the big fights to end suffering for all animals.
         Together with millions of supporters, we take on puppy mills, factory farms, the fur trade, trophy hunting, animal cosmetics testing and other cruel industries. We rescue and care for thousands of animals every year through our Animal Rescue Team’s work and other hands-on animal care services. We fight all forms of animal cruelty to achieve the vision behind our name: A humane society. </p></div>
-    <div class="resourceLocation"><p>Washington, DC</p></div>
-    <div class="resourceSite"><p><a href="https://www.humanesociety.org">The Humane Society</a></p></div>
+    <div class="resourceLocation"><h3>Location</h3><p>Washington, DC</p></div>
+    <div class="resourceSite"><h3>Website</h3><p><a href="https://www.humanesociety.org">The Humane Society</a></p></div>
 </div>
 <div class="resourceContainer">
-    <div class="resourceName"><p>Maddie's Fund</p></div>
-    <div class="resourceSummary"><p>Maddie's Fund® is a family foundation established in 1994 by Dave and Cheryl Duffield and is the fulfillment of a promise to their inspirational dog, Maddie. She provided them much joy from 1987 – 1997 and continues to inspire them today.
+    <div class="resourceName"><h3>Name</h3><p>Maddie's Fund</p></div>
+    <div class="resourceSummary"><h3>Mission</h3><p>Maddie's Fund® is a family foundation established in 1994 by Dave and Cheryl Duffield and is the fulfillment of a promise to their inspirational dog, Maddie. She provided them much joy from 1987 – 1997 and continues to inspire them today.
         The Foundation has awarded nearly $250 million in grants toward increased community lifesaving, pioneering shelter medicine education and establishing foster care as a standard across the U.S.
         Maddie’s Fund proudly offers the industry a national voice, important funding opportunities for bold ideas, learning resources and access to collaborate and share lifesaving ideas. The Foundation invests its resources in a commitment to keeping pets and people together, creating a safety net of care for animals in need and operating within a culture of inclusiveness and humility.</p></div>
-    <div class="resourceLocation"><p>Pleasonton, CA</p></div>
-    <div class="resourceSite"><p><a href="https://www.maddiesfund.org">Maddie's Fund</a></p></div>
+    <div class="resourceLocation"><h3>Location</h3><p>Pleasonton, CA</p></div>
+    <div class="resourceSite"><h3>Website</h3><p><a href="https://www.maddiesfund.org">Maddie's Fund</a></p></div>
 </div>
 <!--Template for Resource Page
 <div class="resourceContainer">
-    <div class="resourceName"><p>Name of Organization/Logo</p></div>
-    <div class="resourceSummary"><p>Place summary, or mission statement here</p></div>
-    <div class="resourceLocation"><p>Location</p></div>
-    <div class="resourceSite"><p>Website Link</p></div>
+    <div class="resourceName"><h3>Name</h3><p>Name of Organization/Logo</p></div>
+    <div class="resourceSummary"><h3>Mission</h3><p>Place summary, or mission statement here</p></div>
+    <div class="resourceLocation"><h3>Location</h3><p>Location</p></div>
+    <div class="resourceSite"><h3>Website</h3><p>Website Link</p></div>
 </div>
 -->
 <div class="searchContainer">

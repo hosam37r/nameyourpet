@@ -160,7 +160,7 @@ function submitFeedbacks(){
     if (this.readyState == 4 && this.status == 200) {
         }
     };
-    xmlhttp.open("GET","addFeedback.php?fname="+fname+"&email="+email+"&phone="+phone+"&response="+response,true);
+    xmlhttp.open("GET","nameurpet.com/addFeedback.php?fname="+fname+"&email="+email+"&phone="+phone+"&response="+response,true);
     xmlhttp.send();
     document.getElementById("fname").value = " ";
     document.getElementById("email").value = " ";

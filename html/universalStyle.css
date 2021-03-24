@@ -1,4 +1,4 @@
-.w3-sidebar a {font-family: "Roboto", sans-serif}
+ .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: 'Josefin Sans', sans-serif;;}
 
 html{
@@ -96,6 +96,7 @@ body{
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
     margin-bottom: 180px;
+    background-attachment: fixed;
 }
 #lowerNav{
     position:absolute;

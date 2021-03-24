@@ -25,23 +25,14 @@
 <body>
 
 <div class="navbarMain">
-
         <div class="navbarDog"><img src = "images/doggoWEBKIT.png" ></div>
-
         <div class="navbarIndex"><a href = "index.php">Home</a> <!-- fill in your url to the page --></div>
-
         <div class="navbarCat"><img src = "images/kittyWEBKIT.jpg" ></div>
-
-        <div class="navbarResources"><a href = "resources.php">Resources</a> <!-- fill in your url to the page --></div>
-
+        <div class="navbarResources"><a href = "resources.html">Resources</a> <!-- fill in your url to the page --></div>
         <div class="navbarIguana"><img src = "images/iguanaWEBKIT.png"></div>
-
         <div class="navbarTrending"><a href = "TrendingPetNames.php">Trending</a> <!-- fill in your url to the page --></div>
-
         <div class="navbarFish"><img src = "images/fishWEBKIT.png" ></div>
-
-        <div class="navbarContact"><a href = "contactUs.php">Contact Us</a> <!-- fill in your url to the page --></div>
-
+        <div class="navbarContact"><a href = "ContactUs.php">Contact Us</a> <!-- fill in your url to the page --></div>
     </div> 
 <div id = "center">
     <h3 id = "centerPageHeader">Contact Us</h3>  <!-- Page Heading Here -->
@@ -51,12 +42,16 @@
 <div id = "leftBar">
     <!--<h3 style = "position:absolute;left:5%;top:5%;font-size:1.5em;" >Email Us</h3>-->
     <h3>Email Us</h3>
+
+    
     <form>
         <input type="text" id="fname" name="fname" placeholder="full name" style = ""><p></p>
         <input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
         <input type="text" id="phone" name="phone" placeholder="phone number" style = ""><p></p>
         <input type="text" id="texts" name="texts" placeholder="send us a message" style = ""><p></p>
     </form>
+
+
     <h3 style = "">Rate Us</h3>
     <img onclick = "submitOne();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starOne" onmouseover="oneStar();" onmouseout="clearStars();">
     <img onclick = "submitTwo();" src = "images/star.png" style = "height:5%;width:10%;cursor:pointer;" id = "starTwo" onmouseover="twoStar();" onmouseout="clearStars();">
@@ -91,7 +86,6 @@
 </div>
     
         <script type="text/JavaScript">        
-
 document.getElementById('starOne').onmouseover=function(){oneStar();};
 document.getElementById('starTwo').onmouseover=function(){twoStar();};
 document.getElementById('starThree').onmouseover=function(){threeStar();};
@@ -150,6 +144,7 @@ function submitFive(){
     submitFour();
     document.getElementById("hiddenStarFive").classList.remove("hidden");
 }
+
 function submitFeedbacks(){
     var fname = document.getElementById("fname").value;
     var email = document.getElementById("email").value;
@@ -160,15 +155,15 @@ function submitFeedbacks(){
     if (this.readyState == 4 && this.status == 200) {
         }
     };
-    xmlhttp.open("GET","nameurpet.com/addFeedback.php?fname="+fname+"&email="+email+"&phone="+phone+"&response="+response,true);
+    xmlhttp.open("GET","addFeedback.php?fname="+fname+"&email="+email+"&phone="+phone+"&response="+response,true);
     xmlhttp.send();
     document.getElementById("fname").value = " ";
     document.getElementById("email").value = " ";
     document.getElementById("phone").value = " ";
     document.getElementById("texts").value = " ";
     alert("Thank you for your feedback, we will get back to you when we feel like it!");
+
 }
 </script>
-
 </body>
 </html>

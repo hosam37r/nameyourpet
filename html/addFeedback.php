@@ -11,7 +11,7 @@
 		$phone = $_GET['phone'];
 		$response = $_GET['response'];
 
-		$servername = "localhost";  // connect to an already existing database if there is one
+		$servername = "127.0.0.1";  
 		$username = "root";
 		$password = "";
 		$dbname = "nameurpet";

@@ -32,19 +32,19 @@
 
    <div class="navbarMain">
 
-        <div class="navbarDog"><img src = "images/doggoWEBKIT.png" ></div>
+        <div class="navbarDog"><img src = "images/dog.png" ></div>
 
         <div class="navbarIndex"><a href = "index.php">Home</a> <!-- fill in your url to the page --></div>
 
-        <div class="navbarCat"><img src = "images/kittyWEBKIT.jpg" ></div>
+        <div class="navbarCat"><img src = "images/cat.png" ></div>
 
         <div class="navbarResources"><a href = "resources.php">Resources</a> <!-- fill in your url to the page --></div>
 
-        <div class="navbarIguana"><img src = "images/iguanaWEBKIT.png"></div>
+        <div class="navbarIguana"><img src = "images/iguana.png"></div>
 
         <div class="navbarTrending"><a href = "TrendingPetNames.php">Trending</a> <!-- fill in your url to the page --></div>
 
-        <div class="navbarFish"><img src = "images/fishWEBKIT.png" ></div>
+        <div class="navbarFish"><img src = "images/fish.png" ></div>
 
         <div class="navbarContact"><a href = "contactUs.php">Contact Us</a> <!-- fill in your url to the page --></div>
 

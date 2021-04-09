@@ -44,7 +44,7 @@
     <h3>Email Us</h3>
 
     <form action="addFeedback.php" method="get">
-        <input type="text" id="name" name="fname" placeholder="full name" style = ""><p></p>
+        <input type="text" id="name" name="name" placeholder="full name" style = ""><p></p>
         <input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
         <input type="text" id="phone" name="phone" placeholder="phone number" style = ""><p></p>
         <input type="text" id="response" name="response" placeholder="send us a message" style = ""><p></p>

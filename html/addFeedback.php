@@ -1,49 +1,29 @@
-<!doctype html>
-<html>
-<head>
-</head>
+<?php
 
-<body>
-    <?php 
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+$link = mysqli_connect("localhost", "student", "password", "feedbacks2");
 
-        $fname = $_GET['fname'];
-        $email = $_GET['email'];
-		$phone = $_GET['phone'];
-		$response = $_GET['response'];
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
 
-		$servername = "127.0.0.1";  
-		$username = "root";
-		$password = "";
-		$dbname = "feedbacks";
+// Escape user inputs for security
+$name = mysqli_real_escape_string($link, $_REQUEST['name']);
+$email = mysqli_real_escape_string($link, $_REQUEST['email']);
+$response = mysqli_real_escape_string($link, $_REQUEST['response']);
+$phone = mysqli_real_escape_string($link, $_REQUEST['phone']);
 
-		$conn = new mysqli($servername, $username, $password, $dbname);
-		if ($conn->connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-		}
-		ini_set('display_errors', '1'); ini_set('display_startup_errors', '1'); error_reporting(E_ALL);
+// Attempt insert query execution
+$sql = "INSERT INTO feedbacks (name, email,message,phone) VALUES ('$name', '$email','$response','$phone')";
+if(mysqli_query($link, $sql)){
+    echo "Records added successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
 
-		$sqli = "select * from feedbacks";
-        $index = 0;
-		$result = $conn->query($sqli);   
-		if ($result->num_rows > 0) {
-			while($row = $result->fetch_assoc()) {
-                $index++;
-            }
-
-            $index++;
-            echo $index;
-        }else {
-			echo "Error: " . $sql . "<br>" . $conn->error;
-		} 
-
-		$sql = "insert into feedbacks (email, id, message, name, phone) values ('$email','$index','$response','$fname','$phone');";
-				if ($conn->query($sql) == TRUE) {
-					echo "New record created successfully";
-				} else {
-					echo "Error: " . $sql . "<br>" . $conn->error;
-				}
-
-		$conn->close();
-	?>
-</body>
-</html>
+// Close connection
+mysqli_close($link);
+header("Location: index.php");
+?>

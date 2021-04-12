@@ -961,6 +961,7 @@
 			var $title = $('h1');
 			var $backButton = $('#back');
 			var $newnameButton = $('#newname');
+            var $prompt = $('#emailPrompt');
 
 
 			var current_id = null;
@@ -997,9 +998,46 @@
 
 				$backButton.css("display", "none");
 				$newnameButton.css("display","none");
+                $prompt.css("display", "none");
 
 				renderList(initData);
 			};
+            
+            $('#submission').on('click', function(e) {
+//							e.preventDefault(); 
+
+							var email = document.getElementById("email").value;
+							
+							const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+							if (!re.test(email.toLowerCase())) { 
+								title = "Invalid email address!";
+                                e.preventDefault(); 
+								$title.text(title);
+								return;
+							}
+							$.ajax({
+                                type: "GET",
+                                url: "addEmail.php?email="+email });
+//							var xmlhttp = new XMLHttpRequest();
+//							xmlhttp.onreadystatechange = function() {
+//								if (this.readyState == 4 && this.status == 200) {
+//								}
+//							};
+//							xmlhttp.open("GET","nameurpet.com/addEmail.php?email="+email,true);
+//							xmlhttp.send();
+							emailReceived = true;
+							if (isFinal == 'yes'){
+								isNameNode = true;
+								$newnameButton.css("display", "inline");
+
+								current_rdm = Math.floor(Math.random() * kids.length);
+								name_dict[current_rdm] = 1;
+
+								renderListRndm(kids[current_rdm]);
+							}
+							var deletor = document.getElementById("emailPrompt");
+							deletor.remove();
+						});
 
 			/* Click handler for each choice */
 			$(document).on('click', '#choices a', function(e) {
@@ -1017,6 +1055,7 @@
 					if (emailReceived == true) {
 						isNameNode = true;
 						$newnameButton.css("display", "inline");
+                        $prompt.css("display", "none");
 
 						current_rdm = Math.floor(Math.random() * kids.length);
 						name_dict[current_rdm] = 1;
@@ -1025,47 +1064,9 @@
 					}
 					else {
 						$list.empty();
-						var div = document.createElement("div");
-						div.setAttribute("id", "emailPrompt");
-						div.innerHTML = `<form action="addEmail.php" method="get"> 
-						<input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
-                        <input class= "button" id="test" type="submit" value="Submit">
-							</form>`
 						var title = "Please enter your email to reveal the names!";
+                        $prompt.css("display", "inline");
 						$title.text(title);
-						$("#emailPrompt").replaceWith(div);
-						$('#test').on('click', function(e) {
-							e.preventDefault(); 
-
-							var email = document.getElementById("email").value;
-							
-							const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-							if (!re.test(email.toLowerCase())) {
-								title = "Invalid email address!";
-								$title.text(title);
-								return;
-							}
-							
-							var xmlhttp = new XMLHttpRequest();
-							xmlhttp.onreadystatechange = function() {
-								if (this.readyState == 4 && this.status == 200) {
-								}
-							};
-							xmlhttp.open("GET","nameurpet.com/addEmail.php?email="+email,true);
-							xmlhttp.send();
-							emailReceived = true;
-							if (isFinal == 'yes'){
-								isNameNode = true;
-								$newnameButton.css("display", "inline");
-
-								current_rdm = Math.floor(Math.random() * kids.length);
-								name_dict[current_rdm] = 1;
-
-								renderListRndm(kids[current_rdm]);
-							}
-							var deletor = document.getElementById("emailPrompt");
-							deletor.remove();
-						});
 					}
 				}
 				else {

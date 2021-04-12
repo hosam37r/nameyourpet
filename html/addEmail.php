@@ -1,46 +1,26 @@
-<!doctype html>
-<html>
-<head>
-</head>
-<!--$servername = "127.0.0.1";-->
-<body>
-    <?php 
+<?php
 
-        $email = $_GET['email'];
+/* Attempt MySQL server connection. Assuming you are running MySQL
+server with default setting (user 'root' with no password) */
+$link = mysqli_connect("localhost", "student", "password", "email");
 
-        $servername = "127.0.0.1";  
-		$username = "root";
-		$password = "";
-		$dbname = "nameyourpet";
+// Check connection
+if($link === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
 
-		$conn = new mysqli($servername, $username, $password, $dbname);
-		if ($conn->connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-		}
+// Escape user inputs for security
+$email = mysqli_real_escape_string($link, $_REQUEST['email']);
 
+// Attempt insert query execution
+$sql = "INSERT INTO email (email) VALUES ('$email')";
+if(mysqli_query($link, $sql)){
+    echo "Records added successfully.";
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($link);
+}
 
-		$sqli = "select * from email";
-        $index = 0;
-		$result = $conn->query($sqli);   
-		if ($result->num_rows > 0) {
-			while($row = $result->fetch_assoc()) {
-                $index++;
-            }
-
-            $index++;
-            echo $index;
-        }else {
-			echo "Error: " . $sql . "<br>" . $conn->error;
-		} 
-
-		$sql = "insert into email (email_id, email) values (100,'$email');";
-				if ($conn->query($sql) == TRUE) {
-					echo "New record created successfully";
-				} else {
-					echo "Error: " . $sql . "<br>" . $conn->error;
-				}
-
-		$conn->close();
-	?>
-</body>
-</html>
+// Close connection
+mysqli_close($link);
+header("Location: index.php");
+?>

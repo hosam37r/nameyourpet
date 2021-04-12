@@ -1029,8 +1029,8 @@
 						div.setAttribute("id", "emailPrompt");
 						div.innerHTML = `<form action="addEmail.php" method="get"> 
 						<input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
-							</form>
-							<button class = "button" id="test">Submit</button>`
+                        <input class= "button" id="test" type="submit" value="Submit">
+							</form>`
 						var title = "Please enter your email to reveal the names!";
 						$title.text(title);
 						$("#emailPrompt").replaceWith(div);

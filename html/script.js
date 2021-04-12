@@ -966,7 +966,7 @@
 
 			var current_id = null;
 			var isNameNode = false;
-            var emailReceived = false; 
+			var emailReceived = false; 
 			var current_rdm;
 			var name_dict = {};
 
@@ -1014,56 +1014,53 @@
 
 				$backButton.css("display", "inline");
 
-				if (isFinal == 'yes' && emailReceived == true){
-					isNameNode = true;
-					$newnameButton.css("display", "inline");
+				if (isFinal == 'yes') {
+					if (emailReceived == true) {
+						isNameNode = true;
+						$newnameButton.css("display", "inline");
 
-					current_rdm = Math.floor(Math.random() * kids.length);
-					name_dict[current_rdm] = 1;
-					
-					renderListRndm(kids[current_rdm]);
+						current_rdm = Math.floor(Math.random() * kids.length);
+						name_dict[current_rdm] = 1;
+						
+						renderListRndm(kids[current_rdm]);
+					}
+					else {
+						$list.empty();
+						var div = document.createElement("div");
+						div.setAttribute("id", "emailPrompt");
+						div.innerHTML = `<form> 
+						<input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
+							</form>
+							<button class = "button" id="test">Submit</button>`
+						var title = "Please enter your email to reveal the names!";
+						$title.text(title);
+						$("#emailPrompt").replaceWith(div);
+						$('#test').on('click', function(e) {
+							e.preventDefault(); 
+
+							var email = document.getElementById("email").value;
+							var xmlhttp = new XMLHttpRequest();
+							xmlhttp.onreadystatechange = function() {
+								if (this.readyState == 4 && this.status == 200) {
+								}
+							};
+							xmlhttp.open("GET","nameurpet.com/addEmail.php?email="+email,true);
+							xmlhttp.send();
+							emailReceived = true;
+							if (isFinal == 'yes'){
+								isNameNode = true;
+								$newnameButton.css("display", "inline");
+
+								current_rdm = Math.floor(Math.random() * kids.length);
+								name_dict[current_rdm] = 1;
+
+								renderListRndm(kids[current_rdm]);
+							}
+							var deletor = document.getElementById("emailPrompt");
+							deletor.remove();
+						});
+					}
 				}
-                
-                if (isFinal == 'yes' && emailReceived == false){
-                    $list.empty();
-                    var div = document.createElement("div");
-                    div.setAttribute("id", "emailPrompt");
-                    div.innerHTML = `<form> 
-            <input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
-            </form>
-            <button class = "button" id="test">Submit</button>`
-                    var title = "Please enter your email to reveal the names!";
-                    $title.text(title);
-                    $("#emailPrompt").replaceWith(div);
-                    $('#test').on('click', function(e) {
-              
-                        e.preventDefault(); 
-                        
-                        var email = document.getElementById("email").value;
-                        var xmlhttp = new XMLHttpRequest();
-                        xmlhttp.onreadystatechange = function() {
-                            if (this.readyState == 4 && this.status == 200) {
-                                }
-                            };
-                        xmlhttp.open("GET","nameurpet.com/addEmail.php?email="+email,true);
-                        xmlhttp.send();
-                        emailReceived = true;
-                        if (isFinal == 'yes'){
-                            isNameNode = true;
-                            $newnameButton.css("display", "inline");
-
-                            current_rdm = Math.floor(Math.random() * kids.length);
-                            name_dict[current_rdm] = 1;
-
-                            renderListRndm(kids[current_rdm]);
-                        }
-                        var deletor = document.getElementById("emailPrompt");
-                        deletor.remove();
-
-                });
-                    
-                }
-                
 				else {
 					isNameNode = false;
 					$newnameButton.css("display", "none");

@@ -1014,7 +1014,7 @@
 				$backButton.css("display", "inline");
 
 				if (isFinal == 'yes') {
-					if (emailReceived == false) {
+					if (emailReceived == true) {
 						isNameNode = true;
 						$newnameButton.css("display", "inline");
 
@@ -1227,3 +1227,6 @@
 				var idList = [];
 				for(var id in this.choices) {
 					if(idList.indexOf(id) !== -1) throw 'DecisionTree: duplicate ID "' + id + '" in choice set';
+                }
+            }
+        }

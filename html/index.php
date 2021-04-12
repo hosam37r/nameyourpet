@@ -65,6 +65,7 @@
 	<h1></h1>
 	<div class="box2">
 		<ul id="choices"></ul>
+        <div id="emailPrompt"></div>
 	<div class="box3">
 		<button id="back">Back</button>
         <button id="newname">Get New Name</button>

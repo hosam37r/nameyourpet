@@ -1027,7 +1027,7 @@
 						$list.empty();
 						var div = document.createElement("div");
 						div.setAttribute("id", "emailPrompt");
-						div.innerHTML = `<form> 
+						div.innerHTML = `<form action="addEmail.php" method="get"> 
 						<input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
 							</form>
 							<button class = "button" id="test">Submit</button>`

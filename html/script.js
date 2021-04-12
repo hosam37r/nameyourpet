@@ -1039,6 +1039,14 @@
 							e.preventDefault(); 
 
 							var email = document.getElementById("email").value;
+							
+							const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+							if (!re.test(email.toLowerCase())) {
+								title = "Invalid email address!";
+								$title.text(title);
+								return;
+							}
+							
 							var xmlhttp = new XMLHttpRequest();
 							xmlhttp.onreadystatechange = function() {
 								if (this.readyState == 4 && this.status == 200) {

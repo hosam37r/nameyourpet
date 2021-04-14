@@ -68,7 +68,7 @@
         <div id="emailPrompt">
             <form action="addEmail.php" method="get"> 
 						<input type="text" id="email" name="email" placeholder="email" style = ""><p></p>
-                        <input class= "button" id="submission" type="submit" value="Submit">
+                        <input id="submission" type="submit" value="Submit">
 							</form></div>
 	<div class="box3">
 		<button id="back">Back</button>

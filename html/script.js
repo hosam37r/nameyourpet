@@ -1228,6 +1228,21 @@
 				var idList = [];
 				for(var id in this.choices) {
 					if(idList.indexOf(id) !== -1) throw 'DecisionTree: duplicate ID "' + id + '" in choice set';
-                }
-            }
-        }
+
+					var choice = this.getChoice(id);
+					choice.id = id;
+
+					var children = this.getChildren(id);
+					for(var i = 0; i < children.length; i++) {
+
+						var child = children[i];
+						if(child.parent) throw 'DecisionTree: tried to assign parent "' + id + '" to child "' + choice.children[i] + '" which already has parent "' + child.parent + '"';
+						child.parent = id;
+
+					}
+
+				}
+
+			};
+
+		};

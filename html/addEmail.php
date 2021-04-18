@@ -13,7 +13,7 @@
 	$email = mysqli_real_escape_string($link, $_POST['email']);
 	
 	// Check if email already exists in the database
-	$sql = "SELECT * FROM EMAIL WHERE EMAIL = '$email'";
+	$sql = "SELECT * FROM email WHERE email = '$email'";
 	$result = mysqli_query($link, $sql);
 	
 	if (mysqli_num_rows($result) > 0) {
@@ -21,7 +21,7 @@
 	}
 	else {
 		// Attempt insert query execution
-		$sql = "INSERT INTO EMAIL (EMAIL) VALUES ('$email')";
+		$sql = "INSERT INTO email (email) VALUES ('$email')";
 
 		if(mysqli_query($link, $sql)){
 			$arr = array('success' => 1, 'message' => "Email added successfully.");

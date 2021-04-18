@@ -1044,7 +1044,7 @@ $(function() {
 				}
 				else
 				{
-					alert('Invalid email address !!!');
+					alert(jsonData.message);
 
 					isNameNode = false;
 					$newnameButton.css("display", "none");

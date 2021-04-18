@@ -996,7 +996,7 @@ $(function() {
 
 		$backButton.css("display", "none");
 		$newnameButton.css("display","none");
-		display$prompt.css("display", "none");
+		$prompt.css("display", "none");
 
 		renderList(initData);
 	};
